@@ -11,14 +11,14 @@ function Navbar() {
                 <Toolbar variant="dense">
                     <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
-                            BlogPessoal
+                            VozTech
                         </Typography>
                     </Box>
 
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                                home
+                                Home
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
