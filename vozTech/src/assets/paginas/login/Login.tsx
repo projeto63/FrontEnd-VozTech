@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.css";
+import Logo from "../../imagens/voztech1.png" 
 import { Grid, Box, Typography, TextField, Button } from "@mui/material";
 import { Link } from 'react-router-dom';
+
 
 
 function Login () {
@@ -9,15 +11,18 @@ function Login () {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className="imagem">
                 <Grid alignItems="center" item xs={8}>
-                    <Box paddingX={20} className="formulario">
+                    <Box paddingX={20} className="formulario" justifyContent="center">
                         <form>
+                            <Box className="logo">
+                            <img src= {Logo} alt="logo" />
+                            </Box>
                             <Typography variant="h3" gutterBottom component="h3" align="center" className="textos1">Entrar</Typography>
                             <TextField id="usuario" label="Usuário" variant="outlined" name="usuario" margin="normal" fullWidth />
                             <TextField id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
                             <Box marginTop={2} textAlign="center">
                                 <Link to="/home" className="text-decorator-none">
                                 <Button type="submit" variant="contained" className="botaologin">
-                                    Logar
+                                    Login
                                 </Button>
                                 </Link>
                             </Box>
