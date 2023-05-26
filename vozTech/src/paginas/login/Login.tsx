@@ -4,8 +4,8 @@ import { Grid, Box, Typography, TextField, Button } from "@mui/material";
 import { Link, useNavigate } from 'react-router-dom';
 import UserLogin from "../../models/UserLogin";
 import { login } from "../../services/Service";
-import { useDispatch } from "react-redux";
-import { addToken } from "../../store/tokens/actions";
+import { addId, addToken } from "../../store/tokens/actions";
+import { useDispatch } from "react-redux/es/exports";
 
 function Login () {
     let navigate = useNavigate();
@@ -14,11 +14,24 @@ function Login () {
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
+            nome: "",
             usuario: "",
+            foto: "",
             senha: "",
             token: ""
         }
         )
+
+        const [respUserLogin, setRespUserLogin] = useState<UserLogin>(
+            {
+                id: 0,
+                nome: "",
+                usuario: "",
+                foto: "",
+                senha: "",
+                token: "",
+            }
+        );
 
         function updatedModel(e: ChangeEvent<HTMLInputElement>) {
             setUserLogin({
@@ -37,13 +50,22 @@ function Login () {
         async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
             e.preventDefault();
             try{
-                await login ("/usuarios/logar", userLogin, setToken)
+                await login ("/usuarios/logar", userLogin, setRespUserLogin)
                 
                 alert("Usuário logado com sucesso!")
             }catch(error){
                 alert("Usuário e/ou senha inválido! Tente nvamente.")
             }
         }
+
+        useEffect(() => {
+            if (respUserLogin.token !== "") {
+                dispatch(addToken(respUserLogin.token))
+                dispatch(addId(respUserLogin.id.toString()))
+                navigate("/home");
+            }
+        }, [respUserLogin.token])
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className="imagem">
@@ -75,4 +97,4 @@ function Login () {
     )
 }
 
-export default Login
+export default Login;

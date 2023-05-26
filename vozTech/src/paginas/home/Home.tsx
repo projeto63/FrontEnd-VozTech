@@ -5,8 +5,8 @@ import './Home.css';
 import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 import { Link, useNavigate } from 'react-router-dom';
 import ModalPostagem from '../../componentes/postagens/modalpostagem/ModalPostagem';
-import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
+import { useSelector } from 'react-redux/es/exports';
 
 function Home() {
     let navigate = useNavigate();

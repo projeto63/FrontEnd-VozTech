@@ -12,8 +12,8 @@ import CadastroPost from './componentes/postagens/cadastropost/CadastroPost';
 import CadastroTema from './componentes/temas/cadastrotemas/CadastroTema';
 import DeletarPostagem from './componentes/postagens/deletarpostagem/DeletarPostagem';
 import DeletarTema from './componentes/temas/deletartemas/DeletarTema';
-import { Provider } from '../node_modules/react-redux/es/exports';
 import store from './store/store';
+import { Provider } from 'react-redux/es/exports';
 
 function App() {
   return (

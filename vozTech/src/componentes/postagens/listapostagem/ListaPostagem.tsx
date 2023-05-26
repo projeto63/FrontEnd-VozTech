@@ -6,8 +6,8 @@ import {Card, CardActions, CardContent, Button, Typography } from '@material-ui/
 import {Box} from '@mui/material';
 import './ListaPostagem.css';
 import { useNavigate } from 'react-router-dom'
-import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useSelector } from 'react-redux/es/exports';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -44,6 +44,9 @@ function ListaPostagem() {
         posts.map(post => (
           <Box m={2} >
             <Card variant="outlined">
+            <Typography variant="body2" component="p">
+              Postado por: {post.usuario?.nome}
+            </Typography>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Postagens

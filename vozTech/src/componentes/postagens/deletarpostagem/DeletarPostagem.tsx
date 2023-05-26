@@ -5,8 +5,8 @@ import './DeletarPostagem.css';
 import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useSelector } from 'react-redux/es/exports';
 
 function DeletarPostagem() {
   let navigate = useNavigate();
@@ -50,7 +50,7 @@ function DeletarPostagem() {
     function nao() {
       navigate('/postagens')
     }
-   
+
   return (
     <>
       <Box m={2}>

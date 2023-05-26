@@ -7,6 +7,7 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { Button, Container, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField, Typography } from '../../../../node_modules/@material-ui/core/index';
 import { useSelector } from '../../../../node_modules/react-redux/es/exports';
 import { useNavigate, useParams } from '../../../../node_modules/react-router-dom/dist/index';
+import User from '../../../models/User';
 
 function CadastroPost() {
     let navigate = useNavigate();
@@ -14,7 +15,11 @@ function CadastroPost() {
     const [temas, setTemas] = useState<Tema[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
+
+    const userId = useSelector<TokenState, TokenState["id"]>(
+        (state) => state.id
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -34,13 +39,23 @@ function CadastroPost() {
         titulo: '',
         texto: '',
         data: '',
-        tema: null
+        tema: null,
+        usuario: null
     })
+
+const [usuario, setUsuario] = useState<User>({
+    id: + userId,
+    nome: '',
+    usuario:'',
+    senha:'',
+    foto:''
+})
 
     useEffect(() => { 
         setPostagem({
             ...postagem,
-            tema: tema
+            tema: tema,
+            usuario: usuario
         })
     }, [tema])
 
