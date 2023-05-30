@@ -91,13 +91,19 @@ function Login () {
                 <Grid alignItems="center" item xs={8}>
                     <Box paddingX={20} className="formulario" justifyContent="center">
                         <form onSubmit={onSubmit}>
+                        <Box className="posicaologo">
+                            <img className="logo" src="https://ik.imagekit.io/projetovoztech/vozTech-center.png?updatedAt=1685468716232"/>
+                        </Box>
                             <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos1">Entrar</Typography>
-                            <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Usuário" variant="outlined" name="usuario" margin="normal" fullWidth />
-                            <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
+                            <Box className="espacologin">
+                            <TextField className="espaco" value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Usuário" variant="outlined" name="usuario" margin="normal" fullWidth />
+                            <TextField className="espaco" value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
+                            </Box>
                             <Box marginTop={2} textAlign="center">
-                                <Button type="submit" variant="contained" color="primary">
+                                <Button type="submit" variant="contained" className="botao">
                                     Logar
                                 </Button>
+                                
                             </Box>
                         </form>
                         <Box display="flex" justifyContent="center" marginTop={2}>
@@ -105,7 +111,7 @@ function Login () {
                                 <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta?</Typography>
                             </Box>
                             <Link to="/cadastrousuario">
-                            <Typography variant="subtitle1" gutterBottom align="center" className="textos1">Cadastre-se </Typography>
+                            <Typography variant="subtitle1" gutterBottom align="center" className="cadastrese" >Cadastre-se </Typography>
                             </Link>   
                         </Box>
                     </Box>
