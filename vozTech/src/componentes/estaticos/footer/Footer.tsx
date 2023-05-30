@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Grid, Typography } from '../../../../node_modules/@material-ui/core/index';
-import { useSelector } from '../../../../node_modules/react-redux/es/exports';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+
 import "./Footer.css";
+import { Grid, Box, Typography } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function Footer() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -34,7 +35,7 @@ function Footer() {
     }
     return (
         <>
-           {footerComponent} 
+        {footerComponent} 
         </>
     )
 }

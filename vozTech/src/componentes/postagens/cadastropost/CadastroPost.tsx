@@ -2,12 +2,12 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 import './CadastroPost.css';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post, put } from '../../../services/Service';
-import { TokenState } from '../../../store/tokens/tokensReducer';
-import { Button, Container, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField, Typography } from '../../../../node_modules/@material-ui/core/index';
-import { useSelector } from '../../../../node_modules/react-redux/es/exports';
-import { useNavigate, useParams } from '../../../../node_modules/react-router-dom/dist/index';
 import User from '../../../models/User';
+import { useNavigate, useParams } from 'react-router-dom';
+import { Container, Typography, TextField, FormControl, InputLabel, Select, MenuItem, FormHelperText, Button } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { busca, buscaId, put, post } from '../../../services/Service';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function CadastroPost() {
     let navigate = useNavigate();
