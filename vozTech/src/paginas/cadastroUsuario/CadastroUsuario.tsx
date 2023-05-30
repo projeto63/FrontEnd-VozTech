@@ -1,13 +1,13 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import "./Cadastro.css";
+import "./CadastroUsuario.css";
 import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
-import { cadastro } from "../../../services/Services";
-import User from "../../../models/User";
+import { cadastroUsuario } from "../../services/Service";
+import User from "../../models/User";
 
-function Cadastro() {
-    const navigate = useNavigate();
-    const [confirmarSenha, setConfirmarSenha] = useState<string>("")
+function CadastroUsuario() {
+    let navigate = useNavigate();
+    const [confirmarSenha, setConfirmarSenha] = useState<String>("")
     const [user, setUser] = useState<User>(
         {
             id: 0,
@@ -43,7 +43,7 @@ function Cadastro() {
         if (user.senha.length >= 8) {
             if (confirmarSenha == user.senha) {
                 try {
-                    await cadastro("/usuarios/cadastrar", user, setUserResult);
+                    await cadastroUsuario("/usuarios/cadastrar", user, setUserResult);
                     alert("Usuário cadastrado com sucesso!")
                 } catch (error) {
                     alert("Falha ao cadastrar usuário, verifique os campos")
@@ -60,15 +60,14 @@ function Cadastro() {
         }
     }
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid item xs={6} className="imagem2"></Grid>
-            <Grid item xs={6} alignItems="center">
-                <Box padding={10}>
+        <Grid container direction="row" justifyContent="center" alignItems="center" className="imagem2">
+            <Grid item xs={8} alignItems="center">
+                <Box paddingX={20} className="formulario2" justifyContent="center">
                     <form onSubmit={onSubmit}>
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos2">Cadastrar</Typography>
                         <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome completo" variant="outlined" name="nome" margin="normal" fullWidth />
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Endereço de e-mail" variant="outlined" name="usuario" margin="normal" fullWidth />
-                        <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="Foto" variant="outlined" name="foto" margin="normal" fullWidth />
+                        <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="URL da Foto" variant="outlined" name="foto" margin="normal" fullWidth />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign="center">
@@ -84,10 +83,8 @@ function Cadastro() {
                     </form>
                 </Box>
             </Grid>
-
-
         </Grid>
     );
 }
 
-export default Cadastro
+export default CadastroUsuario
