@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ik.imagekit.io/projetovoztech/voztech1.png?updatedAt=1684763923814" alt="Logo VozTech" width="200"/>
+  <img src="https://ik.imagekit.io/projetovoztech/VozTech-bg.png?updatedAt=1685462311291" alt="Logo VozTech" width="200"/>
 </p>
 
 # VozTech
