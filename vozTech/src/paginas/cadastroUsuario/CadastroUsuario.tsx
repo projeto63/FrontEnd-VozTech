@@ -64,21 +64,23 @@ function CadastroUsuario() {
             <Grid item xs={8} alignItems="center">
                 <Box paddingX={20} className="formulario2" justifyContent="center">
                     <form onSubmit={onSubmit}>
+                        <Box className="ajuste">
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos2">Cadastrar</Typography>
-                        <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome completo" variant="outlined" name="nome" margin="normal" fullWidth />
-                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Endereço de e-mail" variant="outlined" name="usuario" margin="normal" fullWidth />
-                        <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="URL da Foto" variant="outlined" name="foto" margin="normal" fullWidth />
-                        <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
-                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
+                        <TextField className="espaco" value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome completo"  name="nome" margin="normal" fullWidth />
+                        <TextField className="espaco" value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Endereço de e-mail" variant="outlined" name="usuario" margin="normal" fullWidth />
+                        {/* <TextField className="espaco" value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="URL da Foto" variant="outlined" name="foto" margin="normal" fullWidth /> */}
+                        <TextField className="espaco" value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
+                        <TextField className="espaco" value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign="center">
                             <Link to="/login" className="text-decoration-none">
                                 <Button variant="contained" color="secondary" className="btnCancelar">
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type="submit" variant="contained" color="primary">
+                            <Button type="submit" variant="contained" color="primary" className="btnCadastro">
                                 Cadastrar
                             </Button>
+                        </Box>
                         </Box>
                     </form>
                 </Box>
