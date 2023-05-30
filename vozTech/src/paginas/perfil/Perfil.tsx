@@ -1,23 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector} from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
-
-
 import './Perfil.css';
-import {
-  Grid,
-  Typography,
-  Avatar,
-  Box,
-  Button,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  TextField,
-} from '@mui/material';
+import { Grid, Typography, Avatar, Box, Button, Accordion, AccordionDetails, AccordionSummary, TextField, } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { buscaId, put } from '../../services/Service';
+import User from '../../models/User';
+import { buscaId, post, put } from '../../services/Service';
+import { toast } from 'react-toastify';
 
 function Perfil() {
   const token = useSelector<TokenState, TokenState['tokens']>(
@@ -25,7 +15,7 @@ function Perfil() {
   );
   const userId = useSelector<TokenState, TokenState['id']>((state) => state.id);
 
-  const [usuario, setUsuario] = useState<Usuario>({
+  const [usuario, setUsuario] = useState<User>({
     id: +userId,
     foto: '',
     nome: '',
@@ -79,14 +69,41 @@ function Perfil() {
             Authorization: token,
           },
         });
-        alert('Usuário cadastrado com sucesso');
+        toast.success('Usuário cadastrado com sucesso', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
         setUsuario({ ...usuario, senha: '' });
         setConfirmarSenha('');
       } catch (error) {
-        alert('Falha ao cadastrar o usuário, verifique os campos');
+        toast.error('Falha ao cadastrar o usuário, verifique os campos', {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
       }
     } else {
-      alert('Os campos de Senha e Confirmar Senha estão diferentes');
+      toast.error('Os campos de Senha e Confirmar Senha estão diferentes', {
+        position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+      });
       setUsuario({ ...usuario, senha: '' });
       setConfirmarSenha('');
     }
@@ -175,7 +192,7 @@ function Perfil() {
       <hr />
       <h3 style={{ textAlign: 'center' }}>Suas postagens</h3>
       <div className="perfilPosts">
-        {usuario.postagem?.map((post) => (
+        {usuario.postagem?.map((posts) => (
           <Grid
             item
             border={1}
@@ -184,8 +201,8 @@ function Perfil() {
             p={2}
           >
             <Typography>Postagem:</Typography>
-            <Typography>{post.titulo}</Typography>
-            <Typography>{post.texto}</Typography>
+            <Typography>{posts.titulo}</Typography>
+            <Typography>{posts.texto}</Typography>
             <Avatar
               src={usuario.foto}
               style={{ border: '1px solid black' }}
@@ -194,16 +211,16 @@ function Perfil() {
             <Typography>
               {new Intl.DateTimeFormat('pt-br', {
                 dateStyle: 'full',
-              }).format(new Date(post.data))}
+              }).format(new Date(posts.data))}
             </Typography>
-            <Typography>Tema: {post.tema?.descricao}</Typography>
+            <Typography>Tema: {posts.tema?.descricao}</Typography>
             <Box display={'flex'} gap={4}>
-              <Link to={`/formularioPostagem/${post.id}`}>
+              <Link to={`/formularioPostagem/${posts.id}`}>
                 <Button fullWidth variant="contained" color="primary">
                   editar
                 </Button>
               </Link>
-              <Link to={`/apagarPostagem/${post.id}`}>
+              <Link to={`/apagarPostagem/${posts.id}`}>
                 <Button fullWidth variant="contained" color="secondary">
                   apagar
                 </Button>

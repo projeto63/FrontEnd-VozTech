@@ -4,6 +4,7 @@ import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
 import { Link, useNavigate } from "react-router-dom";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
+import { toast } from "react-toastify";
 
 function CadastroUsuario() {
     let navigate = useNavigate();
@@ -44,17 +45,53 @@ function CadastroUsuario() {
             if (confirmarSenha == user.senha) {
                 try {
                     await cadastroUsuario("/usuarios/cadastrar", user, setUserResult);
-                    alert("Usuário cadastrado com sucesso!")
+                    toast.success("Usuário cadastrado com sucesso", {
+                        position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                    });
                 } catch (error) {
-                    alert("Falha ao cadastrar usuário, verifique os campos")
+                    toast.error("Falha ao cadastrar usuário, verifique os campos", {
+                        position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                    });
                 }
             } else {
-                alert("Os campos de Senha e Confirmar Senha estão diferentes");
+                toast.error("Os campos de Senha e Confirmar Senha estão diferentes", {
+                    position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+                });
                 setUser({ ...user, senha: "" });
                 setConfirmarSenha("")
             }
         } else {
-            alert("Os campos de Senha e Confirmar Senha precisam de, no mínimo, 8 caracteres");
+            toast.error("Os campos de Senha e Confirmar Senha precisam de, no mínimo, 8 caracteres", {
+                position: "top-center",
+                            autoClose: 2000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "colored",
+            });
             setUser({ ...user, senha: "" });
             setConfirmarSenha("")
         }
