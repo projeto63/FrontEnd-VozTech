@@ -2,9 +2,7 @@
   <img src="https://ik.imagekit.io/projetovoztech/voztech1.png?updatedAt=1684763923814" alt="Logo VozTech" width="200"/>
 </p>
 
-<p align="center">
 # VozTech
-</p>
 
 [![Java](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.2-green)](https://spring.io/projects/spring-boot)
