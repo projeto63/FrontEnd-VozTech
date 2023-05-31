@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import User from '../../models/User';
 import { buscaId, post, put } from '../../services/Service';
 import { toast } from 'react-toastify';
+import Cards from '../../componentes/estaticos/cards/cards';
 
 function Perfil() {
   const token = useSelector<TokenState, TokenState['tokens']>(
