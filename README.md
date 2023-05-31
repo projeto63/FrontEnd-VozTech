@@ -5,7 +5,7 @@
 # VozTech
 
 <p width="80">
-<img src="[https://ik.imagekit.io/projetovoztech/java.png?updatedAt=1685560714964](https://ik.imagekit.io/projetovoztech/java-runtime-environment-computer-icons-java-platform-standard-edition-java-42921b98669dba6c6a5ac0b7d81f4164.png?updatedAt=1685560907199)" />
+[![Java]([https://img.shields.io/badge/Java-8-blue](https://ik.imagekit.io/projetovoztech/java-runtime-environment-computer-icons-java-platform-standard-edition-java-42921b98669dba6c6a5ac0b7d81f4164.png?updatedAt=1685560907199))](https://www.java.com/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.2-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)](https://www.mysql.com/)
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
