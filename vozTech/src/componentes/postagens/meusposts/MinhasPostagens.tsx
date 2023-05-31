@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Service'
 import {Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import {Box, Grid} from '@mui/material';
-import './ListaPostagem.css';
+import {Box} from '@mui/material';
+import './MinhasPostagens.css';
 import { useNavigate } from 'react-router-dom'
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux/es/exports';
@@ -54,12 +54,11 @@ function ListaPostagem() {
       {
         posts.map(post => (
           <Box m={2} >
-            <Grid container direction='row' justifyContent = 'center' maxWidth={990}> 
-            <Card variant="outlined" className='card1' >
-              <CardContent >
-              <Typography variant="body2" component="p">
+            <Card variant="outlined">
+            <Typography variant="body2" component="p">
               Postado por: {post.usuario?.nome}
             </Typography>
+              <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
@@ -72,30 +71,28 @@ function ListaPostagem() {
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
                 </Typography>
-                <CardActions>
-                <Box display="flex" justifyContent="center" mb={0}>
+              </CardContent>
+              <CardActions>
+                <Box display="flex" justifyContent="center" mb={1.5}>
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={0} justifyContent = 'center'>
-                      <Button variant="contained" className="botaopost1" size='small' color="primary" >
+                    <Box mx={1}>
+                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
                         Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" className='botaopost2'>
+                      <Button variant="contained" size='small' color="secondary">
                         Deletar
                       </Button>
                     </Box>
                   </Link>
                 </Box>
               </CardActions>
-              </CardContent>
-
             </Card>
-            </Grid>
-             </Box> 
+          </Box>
         ))
       }
     </>

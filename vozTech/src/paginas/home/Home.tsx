@@ -8,6 +8,8 @@ import ModalPostagem from '../../componentes/postagens/modalpostagem/ModalPostag
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux/es/exports';
 import { toast } from 'react-toastify';
+import { Sidebar } from 'react-pro-sidebar';
+import Cards from '../../componentes/estaticos/cards/cards';
 
 function Home() {
     let navigate = useNavigate();
@@ -33,6 +35,7 @@ function Home() {
     }, [token])
     return (
         <>
+          <Sidebar/>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
@@ -48,15 +51,18 @@ function Home() {
                         </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
+                {/* <Grid item xs={6} >
                     <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
+                </Grid> */}
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
                 </Grid>
             </Grid>
+  <Cards/>
         </>
+        
     );
+    
 }
 
 export default Home;

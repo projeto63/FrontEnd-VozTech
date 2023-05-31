@@ -1,0 +1,8 @@
+.logoside {
+    max-width: 130px; 
+}
+
+.posilogoside { display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

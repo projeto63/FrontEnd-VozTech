@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux/es/exports";
 import { toast } from "react-toastify";
 
 function Login () {
-    let navigate = useNavigate();
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [token, setToken] = useState("");
     const [userLogin, setUserLogin] = useState<UserLogin>(
