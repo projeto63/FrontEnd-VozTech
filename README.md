@@ -4,7 +4,7 @@
 
 # VozTech
 
-[![Java](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/)
+<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" width="100"/>
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.2-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)](https://www.mysql.com/)
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
