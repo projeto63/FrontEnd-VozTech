@@ -21,7 +21,7 @@ function Navbar() {
 
   let navbarComponent;
 
-  if(token == '') {
+  if(token !== '') {
     navbarComponent = (
 <AppBar position="static" className="navbar">
         <Toolbar variant="dense" >

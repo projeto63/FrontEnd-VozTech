@@ -1,11 +1,11 @@
-import React from 'react'
+// import React from 'react'
 
-function Sobrenos() {
-  return (
-    <Box>
+// function Sobrenos() {
+//   return (
+//     <Box>
         
-    </Box>
-  )
-}
+//     </Box>
+//   )
+// }
 
-export default Sobrenos
+// export default Sobrenos
