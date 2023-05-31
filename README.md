@@ -4,7 +4,7 @@
 
 # VozTech
 
-[![Java]([https://ik.imagekit.io/projetovoztech/kisspng-java-programmer-computer-programming-logo-5afe2f1d9e22d0.3056800815266076456477.jpg?updatedAt=1685561886805](https://ik.imagekit.io/projetovoztech/java_logo_icon_169577.png?updatedAt=1685562008730))](https://www.java.com/)
+[![Java](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.2-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)](https://www.mysql.com/)
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
