@@ -55,7 +55,7 @@ function DeletarTema() {
             'Authorization': token
           }
         });
-        toast.success("Postagem deletada com sucesso", {
+        toast.success("Tema deletado com sucesso", {
           position: "top-center",
               autoClose: 2000,
               hideProgressBar: false,

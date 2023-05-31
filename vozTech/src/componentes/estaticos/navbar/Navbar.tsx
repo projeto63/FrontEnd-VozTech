@@ -28,7 +28,7 @@ function Navbar() {
           <Grid container justifyContent={'space-between'} className='fonte'>
             <Box style={{ cursor: 'pointer' }}>
               <Typography variant="h5" color="inherit" className='fonte'>
-                BlogPessoal
+                VozTech
               </Typography>
             </Box>
 
@@ -36,41 +36,55 @@ function Navbar() {
               <Link to="/home">
                 <Box mx={1} style={{ cursor: 'pointer' }}>
                   <Typography variant="h6" color="inherit">
-                    home
+                    Página Inicial
                   </Typography>
                 </Box>
               </Link>
               <Link to="/postagens">
                 <Box mx={1} style={{ cursor: 'pointer' }}>
                   <Typography variant="h6" color="inherit">
-                    postagens
+                    Postagens
                   </Typography>
                 </Box>
               </Link>
               <Link to="/temas">
                 <Box mx={1} style={{ cursor: 'pointer' }}>
                   <Typography variant="h6" color="inherit">
-                    temas
+                    Temas
                   </Typography>
                 </Box>
               </Link>
               <Link to="/formularioTema">
                 <Box mx={1} style={{ cursor: 'pointer' }}>
                   <Typography variant="h6" color="inherit">
-                    cadastrar tema
+                    Cadastrar Tema
+                  </Typography>
+                </Box>
+              </Link>
+              <Link to="/sobrenos">
+                <Box mx={1} style={{ cursor: 'pointer' }}>
+                  <Typography variant="h6" color="inherit">
+                    Sobre Nós
+                  </Typography>
+                </Box>
+              </Link>
+              <Link to="/parceiros">
+                <Box mx={1} style={{ cursor: 'pointer' }}>
+                  <Typography variant="h6" color="inherit">
+                    Parceiros
                   </Typography>
                 </Box>
               </Link>
               <Link to="/perfil">
                 <Box mx={1} style={{ cursor: 'pointer' }}>
                   <Typography variant="h6" color="inherit">
-                    perfil
+                    Perfil
                   </Typography>
                 </Box>
               </Link>
               <Box mx={1} style={{ cursor: 'pointer' }} onClick={logout}>
                 <Typography variant="h6" color="inherit">
-                  logout
+                  Logout
                 </Typography>
               </Box>
             </Box>
