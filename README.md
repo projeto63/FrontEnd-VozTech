@@ -4,7 +4,8 @@
 
 # VozTech
 
-<img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" width="100"/>
+<p width="200">
+<img src="https://ik.imagekit.io/projetovoztech/java.png?updatedAt=1685560714964" />
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.2-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)](https://www.mysql.com/)
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
@@ -12,6 +13,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-valid-blue)](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
 [![JavaScript](https://img.shields.io/badge/JavaScript-valid-blue)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![SCRUM](https://img.shields.io/badge/SCRUM-Agil-orange)](https://www.scrum.org/)
+</p>
 
 ## Repositórios Relacionados
 
@@ -20,7 +22,9 @@
 
 ## Descrição
 
-O VozTech é uma rede social que conecta e prioriza a comunidade, buscando semear oportunidades de profissionalização, além de lidar com demandas sociais e de infraestrutura. Com base na ODS da ONU "8.3 Até 2020, reduzir substancialmente a proporção de jovens sem emprego, educação ou formação", nosso projeto visa oferecer interações entre os usuários, fornecendo informações atualizadas sobre onde buscar ajuda de acordo com o problema e parcerias disponíveis para a comunidade. Nessa primeira versão, é possível cadastrar, atualizar, publicar e excluir postagens relacionadas a temas e usuários, utilizando um sistema de CRUD. Além disso, o VozTech possui perfis personalizados, uma área de busca por cursos, oportunidades e contatos de canais de ajuda para apoio social. O sistema foi desenvolvido utilizando o Spring Boot para o back-end e o React para o front-end, proporcionando uma experiência amigável e responsiva.
+O VozTech é uma rede social que prioriza a comunidade e busca gerar oportunidades de profissionalização, além de enfrentar desafios sociais e de infraestrutura. Com base na meta 8.3 dos Objetivos de Desenvolvimento Sustentável da ONU, que visa reduzir substancialmente a proporção de jovens sem emprego, educação ou formação, nosso projeto tem como objetivo oferecer interações entre os usuários, fornecendo informações atualizadas sobre onde obter ajuda e parcerias disponíveis na comunidade.
+
+Nessa primeira versão, os usuários podem cadastrar, atualizar, publicar e excluir postagens relacionadas a temas e usuários, utilizando um sistema de CRUD. Além disso, o VozTech apresenta perfis personalizados, uma área de busca por cursos, oportunidades e contatos de canais de orientação e soluções de problemas. Desenvolvemos o sistema utilizando o Spring Boot para o back-end e o React para o front-end, garantindo uma experiência amigável e responsiva aos usuários.
 
 ## Tecnologias Utilizadas
 
