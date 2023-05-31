@@ -1,9 +1,11 @@
 import React from 'react';
 
 import "./Footer.css";
-import { Grid, Box, Typography } from '@mui/material';
+import { Box, Grid, Link, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Footer() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -12,26 +14,26 @@ function Footer() {
 
     var footerComponent;
 
-    if (token !== ""){
+    if (token == ""){
         footerComponent = <Grid container direction="row" justifyContent="center" alignItems="center">
-        <Grid alignItems="center" item xs={12}>
-            <Box className='box1'>
-                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                    <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
-                </Box>
+        <Grid  item xs={12} className="footer">
+
+        <Box display={'flex'}  gap={2}  className='iconesFooter'  justifyContent={'flex-start'}>
+        <Box className="nomefooter">
+        <Typography className="itemsfooter" variant='h6'>Projeto VozTech</Typography>
+        <Typography className="itemsfooter" variant='h6'>Em parceria com Generation Brasil</Typography>
+        </Box>
+        <Box justifyContent={'center'} className="icones">
+            <a href="https://github.com/projeto63/FrontEnd-VozTech" target='_blank'>
+            <GitHubIcon className='iconeInd' />
+            </a>
+            <a href="https://linktr.ee/projetovoztech"target='_blank'>
+            <LinkedInIcon className='iconeInd' />
+            </a>
             </Box>
-            <Box className='box2'>
-                <Box paddingTop={1}>
-                    <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2023 Copyright:</Typography>
-                </Box>
-                <Box>
-                    <a target="_blank" href="https://brasil.generation.org">
-                        <Typography variant="subtitle2" gutterBottom className='textos' align="center">brasil.generation.org</Typography>
-                    </a>
-                </Box>
-            </Box>
+        </Box>
         </Grid>
-    </Grid>
+        </Grid>
     }
     return (
         <>
