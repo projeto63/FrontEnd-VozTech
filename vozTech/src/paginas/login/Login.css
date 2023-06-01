@@ -3,7 +3,7 @@
 }
 
 .imagem {
-    background-image: url("https://ik.imagekit.io/projetovoztech/login.jpg");
+    background-image: url(https://ik.imagekit.io/projetovoztech/login.jpg);
     background-repeat: no-repeat; 
     width: 100%; 
     min-height: 100vh; 
