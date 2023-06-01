@@ -19,7 +19,7 @@ function TabPostagem() {
             <Tab label="Todas as postagens" value="1"/>
             <Tab label="Sobre nós" value="2" />
           </Tabs>
-        </AppBar> */}
+        </AppBar>
         <TabPanel value="1" >
           <Box display="flex" flexWrap="wrap" justifyContent="center">
             <ListaPostagem />
