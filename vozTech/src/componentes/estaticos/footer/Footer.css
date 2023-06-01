@@ -1,0 +1,48 @@
+"".box1 {
+    background-color: #654236;
+    height: 50px;
+}
+
+.redes {
+    font-size: 60px !important; 
+    color: white; 
+}
+
+
+.textos {
+    color: white;
+}
+
+.footer{
+    background-color: #AC593A;
+}
+
+.iconesFooter{
+    background-color: #AC593A;
+    justify-content: center;
+}
+
+
+.iconeInd{
+
+    justify-items: center !important;
+    font-size: 40px !important;
+}
+
+.nomefooter{
+    align-items: start !important;
+    justify-items: start !important;
+    justify-content: flex-start !important;
+}
+
+.itemsfooter{
+    height: 10px !important;
+    font-size: 10px !important;
+}
+
+/* .icones{
+    justify-content: center !important;
+    align-items: start !important;
+    justify-items: start !important;
+    position: ;
+} */

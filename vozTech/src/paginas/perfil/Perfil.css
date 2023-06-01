@@ -1,0 +1,71 @@
+
+.background{
+  background-color: #FFF5EB;
+  margin: 0px !important;
+}
+
+
+.perfilContainer {
+    /* width: 80vw; */
+    margin-inline: auto;
+    /* background: #f60; */
+  }
+  
+  .perfilBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  
+  .perfilBanner img {
+    width: 10vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid #654236;
+    padding: 8px;
+  }
+  
+  .perfilUpdate {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .perfilUpdate form {
+    width: 50vw;
+  }
+  
+  .perfilPosts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+  }
+
+  .atualizarperfil{
+    
+
+  }
+
+  .espacamento{
+    margin-top: 30px !important;
+  }
+
+  .espacamento2{
+    margin-top: 15px !important;
+  }
+
+  .formulario3{
+    background-color: #d2bbac65 !important;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    width: 400px;
+    height: 550px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 120px;
+    display: flex;
+    padding: 20px;
+  }

@@ -1,0 +1,40 @@
+.caixa {
+    background-color:#FFEBD6;
+
+}
+
+.bgImage{
+    background-image: url("https://ik.imagekit.io/projetovoztech/Imagem_do_WhatsApp_de_2023-05-31_%C3%A0_s__12.11.14.jpg?updatedAt=1685560042234")!important;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    min-height: 40vh; 
+    background-size: cover; 
+    background-position: center;    
+}
+
+.titulo {
+    color: white !important;
+    font-weight: "bold";
+}
+
+.botao {
+    border-color: white !important;
+    background-color: "#FFEBD6" !important; 
+    color: white !important;
+}
+
+.postagens {
+    background-color: #FFEBD6;
+}
+
+.text-decoration-none {
+    text-decoration: none;;
+}
+
+.botaopostagens{
+    margin-left: 10px !important;
+    margin-top: 20px !important;
+    background-color: #654236 !important;
+    color: #FFEBD6 !important;
+
+}
