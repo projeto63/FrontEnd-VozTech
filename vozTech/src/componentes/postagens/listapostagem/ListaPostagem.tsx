@@ -115,14 +115,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={0} justifyContent = 'center'>
-                      <Button variant="contained" className="botaopost1" size='small' color="primary" >
+                      <Button variant="contained" className="botaopost3" size='small' color="primary" >
                         Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" className='botaopost2'>
+                      <Button variant="contained" size='small' color="secondary" className='botaopost4'>
                         Deletar
                       </Button>
                     </Box>
