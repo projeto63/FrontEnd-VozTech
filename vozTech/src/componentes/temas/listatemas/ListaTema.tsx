@@ -50,13 +50,8 @@ function ListaTema() {
     {
       temas.map(tema =>(
       <Box m={2} >
-<<<<<<< HEAD
         <Card variant="outlined" className="card3">
           <CardContent className="ajusteTema">
-=======
-        <Card variant="outlined">
-          <CardContent>
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
             <Typography color="textSecondary" gutterBottom>
               Tema
             </Typography>
@@ -65,38 +60,21 @@ function ListaTema() {
             </Typography>
           </CardContent>
           <CardActions>
-<<<<<<< HEAD
-            <Box display="flex" justifyContent="center" >
+            <Box display="flex"  alignItems='center' >
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button variant="contained" size='small' className="botaopostagens" >
                     Atualizar
                   </Button>
-                  <Button variant="contained" size='small' className="botaopost2">
-                    Deletar
-                  </Button>
                 </Box>
               </Link>
               <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box >
-
-=======
-            <Box display="flex" justifyContent="center" mb={1.5} >
-
-              <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
-                <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                    Atualizar
-                  </Button>
-                </Box>
-              </Link>
-              <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
-                <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
+                  <Button variant="contained" size='small' className="botaopost2">
                     Deletar
                   </Button>
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
+
                 </Box>
               </Link>
             </Box>

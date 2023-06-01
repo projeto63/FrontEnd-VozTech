@@ -48,10 +48,7 @@ function CadastroPost() {
         id: 0,
         titulo: '',
         texto: '',
-<<<<<<< HEAD
         foto:'',
-=======
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
         data: '',
         tema: null,
         usuario: null
@@ -108,11 +105,7 @@ const [usuario, setUsuario] = useState<User>({
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-<<<<<<< HEAD
 ;
-=======
-
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
         if (id !== undefined) {
             put(`/postagens`, postagem, setPostagem, {
                 headers: {
@@ -159,10 +152,7 @@ const [usuario, setUsuario] = useState<User>({
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >
                 {id !== undefined ? "Atualize " : "Cadastre "} sua postagem
                     </Typography>
-<<<<<<< HEAD
                     {/* <TextField value={postagem.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth /> */}
-=======
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} helperText="Mínino 5 caracteres" id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} helperText="Mínino 10 caracteres" id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
@@ -183,11 +173,7 @@ const [usuario, setUsuario] = useState<User>({
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-<<<<<<< HEAD
                     <Button type="submit" variant="contained" className="btnModal">
-=======
-                    <Button type="submit" variant="contained" color="primary">
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
                         Finalizar
                     </Button>
                 </FormControl>

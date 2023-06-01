@@ -1,6 +1,5 @@
 .caixa {
     background-color:#FFEBD6;
-<<<<<<< HEAD
 
 }
 
@@ -11,9 +10,6 @@
     min-height: 40vh; 
     background-size: cover; 
     background-position: center;    
-=======
-    flex
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 }
 
 .titulo {
@@ -33,7 +29,6 @@
 
 .text-decoration-none {
     text-decoration: none;;
-<<<<<<< HEAD
 }
 
 .botaopostagens{
@@ -42,6 +37,4 @@
     background-color: #654236 !important;
     color: #FFEBD6 !important;
 
-=======
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 }
