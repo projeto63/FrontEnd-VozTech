@@ -3,7 +3,12 @@
 }
 
 .btnModal{
+<<<<<<< HEAD
     margin-top: 20px !important;
     background-color: #654236 !important;
     color: #FFEBD6 !important;
+=======
+    border-color: white !important;
+    background-color: white !important;
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 }

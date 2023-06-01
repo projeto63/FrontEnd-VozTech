@@ -29,7 +29,11 @@ function App() {
     <Router>
       <Navbar />
       <Sidebar />
+<<<<<<< HEAD
       <div className="apptsx" style={{ minHeight: '100vh' }}>
+=======
+      <div style={{ minHeight: '100vh' }}>
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
         <Routes>
 
           <Route path="/" element={<Login />} />
@@ -46,8 +50,11 @@ function App() {
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
           <Route path='/perfil' element={<Perfil />} />
           <Route path='/meusPosts' element={<MinhasPostagens />} />
+<<<<<<< HEAD
           <Route path='/sobrenos' element={<Sobrenos />} />
           {/* <Route path='/parceiros' element={<Parceiros />} /> */}
+=======
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 
         </Routes>
       </div>

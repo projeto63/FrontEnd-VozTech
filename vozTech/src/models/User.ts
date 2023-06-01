@@ -11,4 +11,8 @@ interface User {
 
 export default User;
 
+<<<<<<< HEAD
+=======
+import { Postagem } from "./Postagem";
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 

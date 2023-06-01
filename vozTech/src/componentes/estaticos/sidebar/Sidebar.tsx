@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { ChangeEvent, useEffect, useState } from 'react'
+=======
+import React, { useState } from 'react'
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 import { Link } from 'react-router-dom'
 
 import * as FaIcons from 'react-icons/fa' 
@@ -7,10 +11,13 @@ import { SidebarData } from './SidebarData'
 import styled from 'styled-components'
 import { Box } from '@mui/material'
 import "./Sidebar.css"
+<<<<<<< HEAD
 import { useSelector } from 'react-redux'
 import User from '../../../models/User'
 import { TokenState } from '../../../store/tokens/tokensReducer'
 import { buscaId } from '../../../services/Service'
+=======
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
 
 const Sidebar: React.FunctionComponent = () => {
     const [close, setClose] = useState(true)
@@ -78,6 +85,7 @@ const MenuItemLinks = styled(Link)`
         margin: 0 2rem;
     }
     `
+<<<<<<< HEAD
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
       );
@@ -147,6 +155,23 @@ const MenuItemLinks = styled(Link)`
                     
                     return (
                         
+=======
+    return (
+        <>
+            {/* <Navbar>
+                <MenuIconOpen to="#" onClick={showSidebar}>
+                    <FaIcons.FaBars />
+                </MenuIconOpen>
+            </Navbar> */}
+
+            <SidebarMenu close={close}>
+                {/* <MenuIconClose to="#" onClick={showSidebar}>
+                    <FaIcons.FaTimes />
+                </MenuIconClose> */}
+<Box className="posilogoside"><img className='logoside' src="https://ik.imagekit.io/projetovoztech/vozTech-center.png?updatedAt=1685468716232" alt="Logo do projeto VozTech" /> </Box>
+                {SidebarData.map((item, index) => {
+                    return (
+>>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
                         <MenuItems key={index}>
                             <MenuItemLinks to={item.path}>
                                 {item.icon}
