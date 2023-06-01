@@ -101,7 +101,7 @@ function ListaPostagem() {
                   {post.tema?.descricao}
                 </Typography>
                 <Box display="flex" alignItems="center" mb={1}>
-                 <Avatar
+              <Avatar
               src={usuario.foto}
               style={{ border: '1px solid black' }}
               alt="" className="fotoPosts"
@@ -128,14 +128,14 @@ function ListaPostagem() {
                     </Box>
                   </Link>
                 </Box>
-               
+
               </CardActions>
               </CardContent>
 
             </Card>
             </Grid>
             </Grid>
-             </Box> 
+          </Box> 
         ))
       }
     </>

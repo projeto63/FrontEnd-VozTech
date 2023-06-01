@@ -41,36 +41,24 @@
     place-items: center;
   }
 
-<<<<<<< HEAD
   .fotoPosts{
     height: 25px!important;
     width: 25px!important;
- 
+
   }
 
   .card1 {
     display: flex;
     background-color: #D2BBAC !important;
     align-items: center !important;
-   margin-left: 2cm;
-   border-radius: 20px !important;
-=======
-  .card1 {
-    display: flex;
-    background-color: #EE9D66 !important;
-    align-items: center !important;
-   margin-left: 2cm;
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
+    margin-left: 2cm;
+    border-radius: 20px !important;
   }   
 
   .botaopost1 {
     display: flex !important;
-<<<<<<< HEAD
     background-color: #654236 !important;
     color: #FFEBD6 !important;
-=======
-    background-color: rgb(140, 255, 0) !important;
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
     justify-content: center !important;
     align-items: center !important;
     border-radius: 10px;
@@ -78,12 +66,8 @@
 
   .botaopost2 {
     display: flex !important;
-<<<<<<< HEAD
     background-color: #a72d04 !important;
     color: #FFEBD6 !important;
-=======
-    background-color: rgb(0, 216, 236) !important;
->>>>>>> ae33ce2b4e13fcf4b7d73c67f58ff105f70556e8
     justify-content: center !important;
     align-items: center !important;
     border-radius: 10px;
