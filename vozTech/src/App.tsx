@@ -20,6 +20,7 @@ import { ToastContainer } from 'react-toastify';
 import Sidebar from './componentes/estaticos/sidebar/Sidebar'
 import MinhasPostagens from './componentes/postagens/meusposts/MinhasPostagens';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
+import Parceiros from './paginas/parceiros/Parceiros';
 //import Parceiros from './paginas/parceiros/Parceiros';
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
           <Route path='/perfil' element={<Perfil />} />
           <Route path='/meusPosts' element={<MinhasPostagens />} />
           <Route path='/sobrenos' element={<Sobrenos />} />
-          {/* <Route path='/parceiros' element={<Parceiros />} /> */}
+          <Route path='/parceiros' element={<Parceiros/>} />
 
         </Routes>
       </div>

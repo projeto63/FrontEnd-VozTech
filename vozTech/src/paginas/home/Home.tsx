@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import { Sidebar } from 'react-pro-sidebar';
 import Cards from '../../componentes/estaticos/cards/Cards';
 import ListaPostagem from '../../componentes/postagens/listapostagem/ListaPostagem';
+import Carousel from '../../assets/carrosel/Carousel';
 
 function Home() {
     let navigate = useNavigate();
@@ -36,10 +37,11 @@ function Home() {
     }, [token])
     return (
         <>
-        <Sidebar/>
+        
+        <Carousel/>
+        
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={12} className='bgImage'>
-                </Grid>
+            
                 {/* <Grid item xs={6} >
                     <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
                 </Grid> */}

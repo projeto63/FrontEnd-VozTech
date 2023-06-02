@@ -106,7 +106,7 @@ function ListaPostagem() {
               style={{ border: '1px solid black' }}
               alt="" className="fotoPosts"
             />
-              <Typography variant="body2" component="p">
+              <Typography variant="body2" component="p" className="postado">
               Postado por: {post.usuario?.nome}
             </Typography>
             </Box>

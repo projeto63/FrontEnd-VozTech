@@ -1,17 +1,61 @@
-.tituloprojeto{
+.tituloprojeto {
+    font-size: 35px !important;
     margin-bottom: 30px !important;
-}
-
-.sobrenos{
-    display: flex;
-    background-color: #D2BBAC !important;
-    align-items: center !important;
-    margin-left: 2cm;
-    border-radius: 20px !important;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .sobrenos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ee9c6677 !important;
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .conhecanossaequipe {
+    font-size: 35px !important;
+    margin-bottom: 30px !important;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .fotoequipe {
+    border-radius: 100%;
+    width: 12vw;
+    margin-right: auto; /* Espaço entre a foto e o texto */
+    margin-left: auto !important;
+    margin-top: 30px;
     
-}
+  }
+  
+  .pitch {
+    background-color: #ee9c6677;
+    max-width: 700px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex; /* Adicionado */
+    flex-direction: row; /* Adicionado */
+    align-items: center; /* Adicionado */
+    margin-left: auto !important;
+  }
+  
+  .pitch img {
+    margin-right: 20px; /* Adicionado */
 
-/* .fotoequipe{
+  }
+  
+  .fotoposicao {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-}
- */
+  .pitch{
+    margin-right: auto !important;
+    margin-bottom: 30px !important;
+  }

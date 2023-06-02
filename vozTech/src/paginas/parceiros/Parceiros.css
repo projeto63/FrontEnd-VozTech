@@ -1,0 +1,50 @@
+.img1 {
+    border-radius: 60px !important;
+    scale: 0.7 !important;
+    padding-bottom: -20px;
+
+  }
+
+  /* .imgposicao{
+    margin-bottom: -20px;
+  } */
+
+
+  .img2 {
+    border-radius: 40px !important;
+    scale: 0.7 !important;
+    margin: 60px !important;
+  }
+
+  .margin {
+    margin-bottom: 40px !important;
+    margin-top: 90px !important;
+  }
+
+  .textStyle {
+    text-align: justify !important;
+  }
+
+  .textTitle {
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+  }
+
+  @media (max-width: 768px) {
+    .img1 {
+      scale: 0.5 !important;
+      margin: 0 auto !important;
+      display: block !important;
+    }
+
+    .img2 {
+      scale: 1.2 !important;
+      margin: 30px auto !important;
+      display: block !important;
+    }
+
+    .margin {
+      margin-bottom: 20px !important;
+      margin-top: 60px !important;
+    }
+  }

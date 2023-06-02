@@ -1,6 +1,6 @@
 .navbar{
     background-color: #654236 !important;
-    padding-top: 35px !important;
+    padding-top: 40px !important;
 
 }
 
@@ -14,4 +14,12 @@
 
 .text-decorator-none {
     text-decoration: none;
+}
+
+.logoNav{
+    max-height: 100px;
+
+}
+.pLogoNav{
+
 }

@@ -1,3 +1,18 @@
 .topo{
+    background-color: #D2BBAC;
     margin-top: 20px;
+}
+
+.corCadastreTema{
+    color: #35231c;
+}
+
+.botaoCadastreTema{
+    background-color: #654236 !important;
+    color: #FFEBD6 !important;
+}
+
+.botaoCadastreTema:hover{
+    background-color: #FFEBD6 !important;
+    color: #654236 !important;
 }

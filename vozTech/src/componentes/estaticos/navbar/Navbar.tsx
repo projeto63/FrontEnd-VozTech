@@ -25,14 +25,15 @@ function Navbar() {
     navbarComponent = (
 <AppBar position="static" className="navbar">
         <Toolbar variant="dense" >
+        <Box className="pLogoNav">
+              <img className="logoNav" src="https://ik.imagekit.io/projetovoztech/VozTech-bg-pq.png?updatedAt=1685662797332" alt="" />
+            </Box>
           <Grid container justifyContent={'space-between'} className='fonte'>
-            <Box style={{ cursor: 'pointer' }}>
-
+            {/* <Box style={{ cursor: 'pointer' }}>
               <Typography variant="h5" color="inherit" className='fonte'>
                 VozTech
               </Typography>
-
-            </Box>
+            </Box> */}
 
             <Box display="flex" justifyContent="start">
               <Link to="/home">
@@ -64,14 +65,14 @@ function Navbar() {
                 </Box>
               </Link>
               <Link to="/sobrenos">
-                <Box mx={1} style={{ cursor: 'pointer' }}>
+                <Box mx={1} className="cursor">
                   <Typography variant="h6" color="inherit">
                     Sobre Nós
                   </Typography>
                 </Box>
               </Link>
               <Link to="/parceiros">
-                <Box mx={1} style={{ cursor: 'pointer' }}>
+                <Box mx={1} className="cursor">
                   <Typography variant="h6" color="inherit">
                     Parceiros
                   </Typography>

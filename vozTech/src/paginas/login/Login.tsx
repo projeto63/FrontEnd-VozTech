@@ -64,7 +64,7 @@ function Login () {
                     theme: "colored",
                     });
             }catch(error){
-                toast.error("Usuário e/ou senha inválido! Tente nvamente.", {
+                toast.error("Usuário e/ou senha inválido! Tente novamente.", {
                     position: "top-center",
                     autoClose: 2000,
                     hideProgressBar: false,

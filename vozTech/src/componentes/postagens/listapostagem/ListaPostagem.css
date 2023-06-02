@@ -57,6 +57,7 @@
 
 
   .botaopost3{
+    margin-top: 10px !important;
     display: flex !important;
     background-color: #654236 !important;
     color: #FFEBD6 !important;
@@ -67,11 +68,15 @@
 
 
   .botaopost4{
-    margin-top: 20px !important;
+    margin-top: 10px !important;
     display: flex !important;
     background-color: #a72d04 !important;
     color: #FFEBD6 !important;
     justify-content: center !important;
     align-items: center !important;
     border-radius: 10px;
+  }
+
+  .postado{
+    margin-top: 30px !important;
   }
