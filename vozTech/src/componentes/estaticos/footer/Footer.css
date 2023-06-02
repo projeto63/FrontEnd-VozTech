@@ -1,6 +1,6 @@
 .box1 {
     background-color: #654236;
-    height: 50px;
+    height: 150px;
 }
 
 .redes {
@@ -23,19 +23,29 @@
     color: #FFF5EB;
     background-color:#654236;
     justify-content: center;
+    margin-left: -10px;
 }
 
 
-.iconeInd{
+.iconeInd2{
 
     justify-items: center !important;
     font-size: 40px !important;
+    margin-left: -350px;
 }
+
+.iconeInd1 {
+    justify-items: center !important;
+    font-size: 40px !important;
+    margin-left: -410px;
+}
+
 
 .nomefooter{
     align-items: start !important;
     justify-items: start !important;
     justify-content: flex-start !important;
+    margin-left: -500px;
 }
 
 .itemsfooter{
@@ -43,9 +53,3 @@
     font-size: 10px !important;
 }
 
-/* .icones{
-    justify-content: center !important;
-    align-items: start !important;
-    justify-items: start !important;
-    position: ;
-} */
