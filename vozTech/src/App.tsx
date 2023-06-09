@@ -1,4 +1,3 @@
-//import React from "react";
 import { BrowserRouter as Router, Route, Routes} from '../node_modules/react-router-dom/dist/index';
 import Navbar from './componentes/estaticos/navbar/Navbar';
 import Footer from './componentes/estaticos/footer/Footer';
@@ -21,18 +20,18 @@ import Sidebar from './componentes/estaticos/sidebar/Sidebar'
 import MinhasPostagens from './componentes/postagens/meusposts/MinhasPostagens';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Parceiros from './paginas/parceiros/Parceiros';
-//import Parceiros from './paginas/parceiros/Parceiros';
+
 
 function App() {
   return (
     <Provider store={store}>
     <ToastContainer/>
     <Router>
+    <Sidebar />
+      
+      <div className="apptsx" style={{ minHeight: '100vh', width: 'calc(100vw-200px)', marginLeft: '200px' }}>
       <Navbar />
-      {/* <Sidebar /> */}
-      <div className="apptsx" style={{ minHeight: '100vh', width: 'calc(100vw-200px)', marginLeft: 'auto' }}>
         <Routes>
-
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
@@ -51,8 +50,9 @@ function App() {
           <Route path='/parceiros' element={<Parceiros/>} />
 
         </Routes>
+        <Footer />
       </div>
-      <Footer />
+      
     </Router>
     </Provider>
   );

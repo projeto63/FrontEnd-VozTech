@@ -24,7 +24,7 @@ function Navbar() {
   if(token !== '') {
     navbarComponent = (
 <AppBar position="static" className="navbar">
-        <Toolbar variant="dense" >
+        <Toolbar  >
         <Box className="pLogoNav">
               <img className="logoNav" src="https://ik.imagekit.io/projetovoztech/VozTech-bg-pq.png?updatedAt=1685662797332" alt="" />
             </Box>

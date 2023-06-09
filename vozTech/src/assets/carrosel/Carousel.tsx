@@ -12,11 +12,11 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 import './Carousel.css'
 import { Link } from 'react-router-dom';
+import { Box } from '@mui/material';
 
 function Carousel() {   
 
     return (
-
         <Swiper
             navigation={true}
             pagination={{ clickable: true }}
@@ -26,6 +26,7 @@ function Carousel() {
             }}
             className='swiper-container'
         >
+
             <SwiperSlide className='slide-item'>
                 <Link to='/'>
                 <img src="https://ik.imagekit.io/projetovoztech/imagem.jpg?updatedAt=1685560042090" alt="" width="500px" height="300px" />
