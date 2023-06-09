@@ -23,12 +23,12 @@ function Footer() {
         <Typography className="itemsfooter" variant='h6'>Projeto VozTech</Typography>
         <Typography className="itemsfooter" variant='h6'>Em parceria com Generation Brasil</Typography>
         </Box>
-        <Box mx={70} justifyContent='center' display='flex' alignItems='center' className="icones">
+        <Box mx={10} justifyContent='center' display='flex' alignItems='center' className="icones">
             <a href="https://github.com/projeto63/FrontEnd-VozTech" target='_blank'>
-            <GitHubIcon className='iconeInd' />
+            <GitHubIcon className='iconeInd1' />
             </a>
             <a href="https://linktr.ee/projetovoztech"target='_blank' >
-            <LinkedInIcon className='iconeInd' />
+            <LinkedInIcon className='iconeInd2' />
             </a>
             </Box>
 
