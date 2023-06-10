@@ -12,7 +12,7 @@ import CadastroTema from './componentes/temas/cadastrotemas/CadastroTema';
 import DeletarPostagem from './componentes/postagens/deletarpostagem/DeletarPostagem';
 import DeletarTema from './componentes/temas/deletartemas/DeletarTema';
 import store from './store/store';
-import { Provider } from 'react-redux/es/exports';
+import { Provider, useSelector } from 'react-redux/es/exports';
 import Perfil from './paginas/perfil/Perfil';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
@@ -20,16 +20,20 @@ import Sidebar from './componentes/estaticos/sidebar/Sidebar'
 import MinhasPostagens from './componentes/postagens/meusposts/MinhasPostagens';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import Parceiros from './paginas/parceiros/Parceiros';
+import { TokenState } from './store/tokens/tokensReducer';
 
 
 function App() {
+  const token = useSelector<TokenState, TokenState['tokens']>((state) => state.tokens)
   return (
-    <Provider store={store}>
+    <>
     <ToastContainer/>
     <Router>
     <Sidebar />
       
-      <div className="apptsx" style={{ minHeight: '100vh', width: 'calc(100vw-200px)', marginLeft: '200px' }}>
+
+
+      <div className="apptsx" style={ token == ''?  {minHeight: '100vh'} : {minHeight: '100vh', width: 'calc(100vw-200px)', marginLeft: '200px' }}>
       <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
@@ -52,9 +56,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
-      
     </Router>
-    </Provider>
+    </>
   );
 }
 
