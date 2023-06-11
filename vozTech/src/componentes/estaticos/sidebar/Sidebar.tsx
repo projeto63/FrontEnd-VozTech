@@ -41,7 +41,7 @@ const MenuItemLinks = styled(Link)`
   &:hover {
     background-color: #ffebd6;
     color: #654236;
-    width: 100%;
+    width: 50%;
     height: 45px;
     text-align: center;
     border-radius: 5px;
@@ -93,30 +93,32 @@ const Sidebar: React.FunctionComponent = () => {
     <Container>
       <Grid container>
         <Grid item xs={2}>
-          <SidebarMenu>
-            <div className="perfilBanner">
-              <div>
-                <h2>{usuario.nome}</h2>
-                <p>{usuario.usuario}</p>
-                <p>Total de postagens feitas: {usuario.postagem?.length}</p>
-              </div>
-              <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
-            </div>
-
-            <Box className="posilogoside">
+          <SidebarMenu className="sidebarmenu">
+          <Box className="posilogoside">
               <img
                 className="logoside"
                 src="https://ik.imagekit.io/projetovoztech/vozTech-center.png?updatedAt=1685468716232"
                 alt="Logo do projeto VozTech"
               />
             </Box>
+            <div className="perfilBanner">
+              <div>
+                <h2>{usuario.nome}</h2>
+                <p>{usuario.usuario}</p>
+                <p>{usuario.nome}</p> 
+                {/* <p>Total de postagens feitas: {usuario.postagem?.length}</p> */}
+              </div>
+              <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+            </div>
+
+
 
             {SidebarData.map((item, index) => {
               return (
                 <MenuItems key={index}>
-                  <MenuItemLinks to={item.path}>
+                  <MenuItemLinks to={item.path} >
                     {item.icon}
-                    <span style={{ marginLeft: '16px' }}>{item.title}</span>
+                    <span style={{ marginLeft: '10px' }}>{item.title}</span>
                   </MenuItemLinks>
                 </MenuItems>
               )
