@@ -38,7 +38,7 @@
     
   .alinhamento { display: flex !important;
     display: grid;
-    place-items: center;
+    justify-content: center !important;
   }
 
   .fotoPosts{

@@ -1,15 +1,14 @@
 .swiper-container {
-    height: auto;
-    width: 600px;
+    height: 400px;
+    width: 1300px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: pink;
 }
 
 .slide-item {
     height:fit-content;
     width: fit-content;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 
 .slide-item img {
