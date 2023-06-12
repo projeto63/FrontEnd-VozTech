@@ -105,7 +105,7 @@ function CadastroUsuario() {
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="textos2">Cadastrar</Typography>
                         <TextField className="espaco" value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome completo"  name="nome" margin="normal" fullWidth />
                         <TextField className="espaco" value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Endereço de e-mail" variant="outlined" name="usuario" margin="normal" fullWidth />
-                        {/* <TextField className="espaco" value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="URL da Foto" variant="outlined" name="foto" margin="normal" fullWidth /> */}
+                        <TextField className="espaco" value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="URL da Foto" variant="outlined" name="foto" margin="normal" fullWidth />
                         <TextField className="espaco" value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
                         <TextField className="espaco" value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth />
                         <Box marginTop={2} textAlign="center">
