@@ -73,10 +73,17 @@ function DeletarTema() {
           
   return (
     <>
+<<<<<<< Updated upstream
       <Box m={2}>
         <Card variant="outlined">
           <CardContent>
             <Box justifyContent="center">
+=======
+      <Box m={2} >
+        <Card variant="outlined" className='carddelet'>
+          <CardContent >
+            <Box justifyContent="center" >
+>>>>>>> Stashed changes
               <Typography color="textSecondary" gutterBottom>
                 Deseja deletar o Tema:
               </Typography>

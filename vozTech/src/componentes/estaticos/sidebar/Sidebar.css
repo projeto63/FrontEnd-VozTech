@@ -9,5 +9,17 @@
 }
 
 .sidebarmenu{
+<<<<<<< Updated upstream
     font-family: 'Montserrat', sans-serif !important;
 }
+=======
+    font-family: 'Lato', sans-serif !important;
+}
+
+.perfilContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+>>>>>>> Stashed changes
