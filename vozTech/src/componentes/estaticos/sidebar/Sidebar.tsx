@@ -25,7 +25,7 @@ const MenuItems = styled.li`
   display: block;
   align-items: center;
   justify-content: start;
-  width: 100%;
+  width: 100%;s
   height: 90px;
   padding: 1rem 0 1.25rem;
 `

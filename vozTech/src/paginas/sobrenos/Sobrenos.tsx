@@ -1,10 +1,18 @@
 import { Box, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Sobrenos.css'
 
 function Sobrenos() {
-return (
+  //useEffect(() => {
 
+    //getSobrenos()
+
+  //}, [sobrenos.length])
+
+return (
+       // <>
+         //{sobrenos.length === 0 && <div className='alinhamento'><span className="loader"></span></div>}
+    
         <Grid>
             <Typography className="tituloprojeto" display='center' justifyContent='center' alignItems='center'> Projeto VozTech </Typography>
 
@@ -52,6 +60,7 @@ return (
             </Grid>
         </Grid>
     </Grid>
+   // </>
 )
 }
 

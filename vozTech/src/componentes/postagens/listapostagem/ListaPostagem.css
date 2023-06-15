@@ -49,8 +49,9 @@
 
   .card1 {
     display: flex;
+    background-color: #d2acc8 !important;
+    align-items: center !important;
     background-color: #D2BBAC !important;
-    
     margin-left: 2cm;
     border-radius: 20px !important;
   }   
