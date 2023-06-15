@@ -1,0 +1,25 @@
+.botaonao {
+    background-color: #654236 !important;
+    color: #FFEBD6 !important;
+}
+
+.botaonao:hover {
+    font-weight: bolder !important;
+    background-color: #918450 !important;
+    color: #FFEBD6 !important;
+}
+
+.marginLeft {
+    display: flex !important;
+    background-color: #a72d04 !important;
+    color: #FFEBD6 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px;
+}
+
+.marginLeft:hover {
+    font-weight: bolder !important;
+    background-color: #a54d43 !important;
+    color: #FFEBD6 !important;
+}
