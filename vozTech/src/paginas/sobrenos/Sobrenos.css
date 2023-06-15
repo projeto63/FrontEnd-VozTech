@@ -1,9 +1,11 @@
 .tituloprojeto {
-    font-size: 35px !important;
-    margin-bottom: 30px !important;
+    margin-top: 20px !important;
+  font-size: 35px !important;
+    margin-bottom: 5px !important;
     /* text-decoration: underline; */
     text-align: center;
     text-decoration: none;
+    
     
   }
   
@@ -12,7 +14,7 @@
     margin-bottom: 20px;
     background-color: #ee9c6677 !important;
     border-radius: 10px;
-    max-width: 700px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
@@ -20,8 +22,8 @@
   }
   
   .conhecanossaequipe {
-    font-size: 35px !important;
-    margin-bottom: 30px !important;
+    font-size: 45px !important;
+    margin-bottom: 35px !important;
     text-decoration: underline;
     text-align: center;
     /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.222); */
@@ -30,13 +32,17 @@
   
   .fotoequipe {
     border-radius: 100%;
-    width: 12vw;
+    width: 14vw;
     margin-right: auto; /* Espaço entre a foto e o texto */
     margin-left: auto !important;
     margin-top: 30px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
-    
-    
+    transition: transform 0.3s ease;
+
+  }
+  .fotoequipe:hover{
+    transform: scale(1.2);
+
   }
   
   .pitch {
@@ -47,12 +53,12 @@
     display: flex; /* Adicionado */
     flex-direction: row; /* Adicionado */
     align-items: center; /* Adicionado */
-    margin-left: auto !important;
+    margin-left: 50px !important;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
   }
   
   .pitch img {
-    margin-right: 20px; /* Adicionado */
+    margin-right: 60px; /* Adicionado */
 
   }
   
@@ -62,6 +68,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: -90px;
   }
 
   .pitch{
@@ -73,4 +80,10 @@
   .negocinho{
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
     color: #ffebd610;
+    margin-bottom: 50px;
   }
+
+  .fotoposicao gustavo{
+  }
+
+ 
