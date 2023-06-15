@@ -102,13 +102,13 @@ const Sidebar: React.FunctionComponent = () => {
               />
             </Box>
             <div className="perfilBanner">
-              <div>
-                <h2>{usuario.nome}</h2>
-                <p>{usuario.usuario}</p>
-                <p>{usuario.nome}</p> 
+              <div className="perfilContent">
+              <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+              <h2>{usuario.nome}</h2>
+                {/* <p>{usuario.usuario}</p> */}
+                {/* <p>{usuario.nome}</p>  */}
                 {/* <p>Total de postagens feitas: {usuario.postagem?.length}</p> */}
               </div>
-              <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
             </div>
 
 
