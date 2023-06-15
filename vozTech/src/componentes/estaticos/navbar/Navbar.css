@@ -7,6 +7,7 @@
 .cursor {
     cursor: pointer;
     margin-bottom: -15px;
+
     text-align: center;
 }
 
@@ -18,12 +19,19 @@
     padding-right: 20px;
 }
 
+
 .margemcursor:hover{
     background-color: #FFF5EB;
     color: #654236;
     border-radius: 5px;
+=======
+.margemcursor{
+    margin: 10px;
+
+
 }
 
 .text-decorator-none {
     text-decoration: none;
 }
+

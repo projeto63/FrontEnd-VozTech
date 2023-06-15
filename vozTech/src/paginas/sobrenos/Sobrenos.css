@@ -1,8 +1,10 @@
 .tituloprojeto {
     font-size: 35px !important;
     margin-bottom: 30px !important;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
+    text-decoration: none;
+    
   }
   
   .sobrenos {
@@ -13,6 +15,8 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    padding: 25px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
   }
   
   .conhecanossaequipe {
@@ -20,6 +24,8 @@
     margin-bottom: 30px !important;
     text-decoration: underline;
     text-align: center;
+    /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.222); */
+    text-decoration: none;
   }
   
   .fotoequipe {
@@ -28,6 +34,8 @@
     margin-right: auto; /* Espaço entre a foto e o texto */
     margin-left: auto !important;
     margin-top: 30px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    
     
   }
   
@@ -40,6 +48,7 @@
     flex-direction: row; /* Adicionado */
     align-items: center; /* Adicionado */
     margin-left: auto !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
   }
   
   .pitch img {
@@ -58,4 +67,10 @@
   .pitch{
     margin-right: auto !important;
     margin-bottom: 30px !important;
+    padding: 25px;
+    
+  }
+  .negocinho{
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    color: #ffebd610;
   }
