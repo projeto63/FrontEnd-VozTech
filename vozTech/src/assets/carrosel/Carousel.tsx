@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
+
 // Colocando o Navigation e Pagination:
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
@@ -14,23 +15,26 @@ import './Carousel.css'
 import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 
-function Carousel() {   
+function Carousel() {
 
     return (
         <Swiper
-            navigation={true}
+            className='swiper-container'
+            navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+            }}
             pagination={{ clickable: true }}
             autoplay={{
                 delay: 3500,
                 disableOnInteraction: false,
             }}
-            className='swiper-container'
+            
         >
+             <div className="swiper-pagination swiper-pagination-clickable" /> {/* Adicione essa div para as bolinhas de navegação */}
 
             <SwiperSlide className='slide-item'>
-                <Link to='/'>
                 <img src="https://ik.imagekit.io/projetovoztech/imagem.jpg?updatedAt=1685560042090" alt="" width="500px" height="300px" />
-                </Link>
             </SwiperSlide>
             <SwiperSlide className='slide-item'>
                 <img src="https://ik.imagekit.io/projetovoztech/Imagem_do_WhatsApp_de_2023-05-31_%C3%A0_s__12.11.14.jpg?updatedAt=1685560042234" alt="" width="500px" height="300px" />
@@ -38,6 +42,9 @@ function Carousel() {
             <SwiperSlide className='slide-item'>
                 <img src="https://ik.imagekit.io/projetovoztech/login.jpg?updatedAt=1684763923828" alt="" width="500px" height="300px" />
             </SwiperSlide>
+
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
 
         </Swiper>
 
