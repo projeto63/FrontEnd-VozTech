@@ -48,6 +48,12 @@
     color: #FFEBD6 !important;
     
   }
+
+  .botaopostagens:hover{
+    font-weight: bolder !important;
+    background-color: #918450 !important;
+    color: #FFEBD6 !important;
+  }
   
   .botaopost2 {
   margin-top: 20px !important;
@@ -59,8 +65,15 @@
   border-radius: 10px;
 }
 
+.botaopost2:hover{
+  font-weight: bolder !important;
+  background-color: #a54d43 !important;
+  color: #FFEBD6 !important;
+}
+
 .card3{
   display: flex;
+  margin: auto !important;
   background-color: #D2BBAC !important;
   align-items: center !important;
   margin-left: 2cm;
@@ -68,6 +81,7 @@
   /* justify-content: space-between; */
   flex-direction: column;
   width: 25%;
+
 }
 
 /* .card1 {

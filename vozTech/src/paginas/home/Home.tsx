@@ -39,8 +39,8 @@ function Home() {
         <>
         
         <Carousel/>
-        
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+        <Grid  className="gridprincipalhome">
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa' > 
             
                 {/* <Grid item xs={6} >
                     <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
@@ -51,7 +51,7 @@ function Home() {
                             <ModalPostagem />
                         </Box>
                         <Link to="/postagens" className='text-decoration-none'>
-                            <Button variant="outlined" className='botaopostagens'>Ver Postagens</Button>
+                            <Button variant="outlined" className='botaopostagenshome'>Ver Postagens</Button>
                         </Link>
                     </Box>
                     </Grid>
@@ -60,6 +60,7 @@ function Home() {
             <Grid xs={12} className='postagens'>
                 
                 </Grid>
+        </Grid>
         </> 
         
     );
