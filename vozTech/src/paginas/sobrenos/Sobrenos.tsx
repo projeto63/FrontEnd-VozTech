@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Sobrenos.css'
 
 function Sobrenos() {
@@ -89,9 +89,11 @@ function Sobrenos() {
               Meu nome é Gustavo, tenho 24 anos e sou um profissional em transição de carreira. Trabalhei na área de auditoria médica, onde desenvolvi habilidades analíticas, resolução de problemas, atenção aos detalhes e o trabalho em equipe. Iniciei minha jornada acadêmica com o curso de História, mas decidi seguir minha paixão por tecnologia e inovação e comecei a estudar Análise e Desenvolvimento de Sistemas em 2022. Em março de 2023, comecei meu programa de formação na Generation Brasil, onde estou me capacitando em habilidades digitais para me tornar um desenvolvedor web completo. Sou movido por desafios e estou sempre em busca de novas oportunidades para aprender e crescer profissionalmente. Se você procura um profissional dedicado, curioso e capaz de se adaptar a novos desafios, estou aqui para contribuir com o sucesso da sua empresa.
             </Typography>
           </Box>
+
         </Grid>
       </Grid>
     </Grid>
+   // </>
 )
 }
 

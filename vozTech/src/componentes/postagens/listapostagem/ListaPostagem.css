@@ -49,8 +49,9 @@
 
   .card1 {
     display: flex;
-    background-color: #D2BBAC !important;
+    background-color: #d2acc8 !important;
     align-items: center !important;
+    background-color: #D2BBAC !important;
     margin-left: 2cm;
     border-radius: 20px !important;
   }   
@@ -66,17 +67,38 @@
     border-radius: 10px;
   }
 
+  .botaopost3:hover{
+    font-weight: bolder !important;
+    background-color: #918450 !important;
+    color: #FFEBD6 !important;
+  }
+
 
   .botaopost4{
     margin-top: 10px !important;
     display: flex !important;
-    background-color: #a72d04 !important;
+    background-color: #8e2300 !important;
     color: #FFEBD6 !important;
     justify-content: center !important;
     align-items: center !important;
     border-radius: 10px;
   }
 
+  .botaopost4:hover{
+    font-weight: bolder !important;
+    background-color: #a54d43 !important;
+    color: #FFEBD6 !important;
+  }
+
   .postado{
     margin-top: 30px !important;
+  }
+
+  .gridprincipal{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto;
+    padding-left: 0px;
+    /* background-color: pink; */
   }

@@ -83,7 +83,7 @@ function ListaPostagem() {
       {
         posts.map(post => (
           <Box m={2} >
-            <Grid container direction='row' justifyContent = 'center' maxWidth={600}> 
+            <Grid container direction='row' justifyContent = 'center' maxWidth={600} className="gridprincipal"> 
             <Grid>
             <Card variant="outlined" className='card1' >
               <CardContent >
