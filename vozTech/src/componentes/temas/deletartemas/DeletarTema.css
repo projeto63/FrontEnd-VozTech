@@ -1,0 +1,37 @@
+.marginLeft {
+    display: flex !important;
+    background-color: #a72d04 !important;
+    color: #FFEBD6 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px;
+}
+
+.marginLeft:hover {
+    font-weight: bolder !important;
+    background-color: #a54d43 !important;
+    color: #FFEBD6 !important;
+}
+
+.botaonao {
+    background-color: #654236 !important;
+    color: #FFEBD6 !important;
+}
+
+.botaonao:hover {
+    font-weight: bolder !important;
+    background-color: #918450 !important;
+    color: #FFEBD6 !important;
+}
+
+.carddelet {
+    display: flex;
+  margin: auto !important;
+  background-color: #D2BBAC !important;
+  align-items: center !important;
+  margin-left: 2cm;
+  border-radius: 20px !important;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  width: 25%;
+}
