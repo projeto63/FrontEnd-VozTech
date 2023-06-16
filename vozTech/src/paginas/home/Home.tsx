@@ -37,8 +37,8 @@ function Home() {
     }, [token])
     return (
         <>
-        
         <Carousel/>
+        
         <Grid  className="gridprincipalhome">
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa' > 
             
