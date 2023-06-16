@@ -40,3 +40,7 @@
     display: grid;
     place-items: center;
   }
+
+  .perfilPosts{
+    min-height: 77vh !important;
+  }
