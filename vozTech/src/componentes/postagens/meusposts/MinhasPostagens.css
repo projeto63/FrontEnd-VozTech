@@ -41,6 +41,10 @@
     place-items: center;
   }
 
+  .perfilPosts{
+    min-height: 77vh !important;
+  }
+
   .marginLeft {
     display: flex !important;
     background-color: #a72d04 !important;
@@ -66,3 +70,4 @@
   background-color: #918450 !important;
   color: #FFEBD6 !important;
 }
+

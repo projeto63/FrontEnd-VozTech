@@ -82,7 +82,7 @@ function ListaPostagem() {
     {posts.length === 0 && <div className='alinhamento'><span className="loader"></span></div>}
       {
         posts.map(post => (
-          <Box m={2} >
+          <Box m={2} className="containerposts">
             <Grid container direction='row' justifyContent = 'center' maxWidth={600} className="gridprincipal"> 
             <Grid>
             <Card variant="outlined" className='card1' >
