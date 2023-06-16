@@ -15,6 +15,7 @@
 
 .footer{
     background-color: #654236;
+    min-height: 2vh !important;
 }
 
 .iconesFooter{
@@ -30,14 +31,16 @@
 .iconeInd2{
 
     justify-items: center !important;
-    font-size: 40px !important;
-    margin-left: -360px;
+    font-size: 45px !important;
+    color: #FFF5EB !important;
+    margin-top: 10px;
 }
 
 .iconeInd1 {
     justify-items: center !important;
-    font-size: 40px !important;
-    margin-left: -410px;
+    font-size: 45px !important;
+    color: #FFF5EB !important;
+    margin-top: 10px;
 }
 
 
@@ -59,4 +62,8 @@
     /* min-height: 100vh !important; */
     /* position: absolute !important; */
 
+}
+
+.frasefooter{
+    color: #FFF5EB !important;
 }
