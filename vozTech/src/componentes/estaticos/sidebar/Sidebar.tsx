@@ -95,12 +95,15 @@ const Sidebar: React.FunctionComponent = () => {
         <Grid item xs={2}>
           <SidebarMenu className="sidebarmenu">
           <Box className="posilogoside">
-              <img
-                className="logoside"
-                src="https://ik.imagekit.io/projetovoztech/vozTech-center.png?updatedAt=1685468716232"
-                alt="Logo do projeto VozTech"
-              />
-            </Box>
+  <a href="https://github.com/projeto63" target="_blank">
+    <img
+      className="logoside"
+      src="https://ik.imagekit.io/projetovoztech/vozTech-center.png?updatedAt=1685468716232"
+      alt="Logo do projeto VozTech"
+    />
+  </a>
+</Box>
+
             <div className="perfilBanner">
               <div className="perfilContent">
               <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />

@@ -31,7 +31,7 @@
 
     justify-items: center !important;
     font-size: 40px !important;
-    margin-left: -350px;
+    margin-left: -360px;
 }
 
 .iconeInd1 {
@@ -51,5 +51,7 @@
 .itemsfooter{
     height: 10px !important;
     font-size: 10px !important;
+    position: relative !important;
+    left: 55px;
 }
 
