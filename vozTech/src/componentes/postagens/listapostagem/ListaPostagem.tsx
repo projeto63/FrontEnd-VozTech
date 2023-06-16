@@ -102,7 +102,7 @@ function ListaPostagem() {
                 </Typography>
                 <Box display="flex" alignItems="center" mb={1}>
               <Avatar
-              src={usuario.foto}
+              src={post.usuario.foto}
               style={{ border: '1px solid black' }}
               alt="" className="fotoPosts"
             />
@@ -113,22 +113,8 @@ function ListaPostagem() {
                 <CardActions>
                 <Box display="flex" justifyContent="center" mb={0}>
 
-                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                    <Box mx={0} justifyContent = 'center'>
-                      <Button variant="contained" className="botaopost3" size='small' color="primary" >
-                        Atualizar
-                      </Button>
-                    </Box>
-                  </Link>
-                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" className='botaopost4'>
-                        Deletar
-                      </Button>
-                    </Box>
-                  </Link>
+                 
                 </Box>
-
               </CardActions>
               </CardContent>
 

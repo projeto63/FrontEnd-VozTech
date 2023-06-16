@@ -168,7 +168,9 @@ const [usuario, setUsuario] = useState<User>({
                         })}>
                         {
                             temas.map(tema => (
-                                <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
+                                <MenuItem value={tema.id} style={{display: 'block'}}>
+                                {tema.descricao}
+                                </MenuItem>
                             ))
                         }
                     </Select>
