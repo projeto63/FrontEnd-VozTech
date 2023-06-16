@@ -137,13 +137,13 @@ function MinhasPostagens() {
             <Typography>Tema: {posts.tema?.descricao}</Typography>
             <Box display={'flex'} gap={4}>
               <Link to={`/formularioPostagem/${posts.id}`}>
-                <Button fullWidth variant="contained" color="primary">
-                  editar
+                <Button fullWidth variant="contained" className="marginLeft">
+                  Editar
                 </Button>
               </Link>
               <Link to={`/apagarPostagem/${posts.id}`}>
-                <Button fullWidth variant="contained" color="secondary">
-                  apagar
+                <Button fullWidth variant="contained" className='botaoapagar'>
+                  Apagar
                 </Button>
               </Link>
             </Box>

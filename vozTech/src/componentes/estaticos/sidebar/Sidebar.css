@@ -1,5 +1,9 @@
 .logoside {
     max-width: 130px; 
+    transition: transform 0.3s ease;
+}
+.logoside:hover{
+    transform: scale(1.1);
 }
 
 .posilogoside { display: flex;
@@ -9,5 +13,13 @@
 }
 
 .sidebarmenu{
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
+    /* font-family: 'Lato', sans-serif !important; */
+
+.perfilContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
