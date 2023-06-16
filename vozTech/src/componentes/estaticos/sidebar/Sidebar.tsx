@@ -54,7 +54,7 @@ const Sidebar: React.FunctionComponent = () => {
   const userId = useSelector<TokenState, TokenState['id']>((state) => state.id)
 
   const [usuario, setUsuario] = useState<User>({
-    id: +userId,
+    id: 0,
     foto: '',
     nome: '',
     usuario: '',
@@ -64,7 +64,7 @@ const Sidebar: React.FunctionComponent = () => {
 
   async function getUsuario() {
     try {
-      await buscaId(`/usuarios/${usuario.id}`, setUsuario, {
+      await buscaId(`/usuarios/${userId}`, setUsuario, {
         headers: {
           Authorization: token,
         },
@@ -76,7 +76,7 @@ const Sidebar: React.FunctionComponent = () => {
 
   useEffect(() => {
     getUsuario()
-  }, [])
+  }, [userId])
 
   useEffect(() => {
     setUsuario({

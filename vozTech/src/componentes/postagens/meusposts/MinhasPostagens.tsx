@@ -5,7 +5,7 @@ import { Grid, Typography, Avatar, Box, Button, Accordion, AccordionDetails, Acc
 import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { toast } from 'react-toastify';
-import { buscaId, put } from '../../../services/Service';
+import { buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import User from '../../../models/User';
 
@@ -14,6 +14,7 @@ function MinhasPostagens() {
     (state) => state.tokens
   );
   const userId = useSelector<TokenState, TokenState['id']>((state) => state.id);
+  
 
   const [usuario, setUsuario] = useState<User>({
     id: +userId,
@@ -136,16 +137,20 @@ function MinhasPostagens() {
             </Typography>
             <Typography>Tema: {posts.tema?.descricao}</Typography>
             <Box display={'flex'} gap={4}>
-              <Link to={`/formularioPostagem/${posts.id}`}>
-                <Button fullWidth variant="contained" className="marginLeft">
-                  Editar
-                </Button>
-              </Link>
-              <Link to={`/apagarPostagem/${posts.id}`}>
-                <Button fullWidth variant="contained" className='botaoapagar'>
-                  Apagar
-                </Button>
-              </Link>
+            <Link to={`/formularioPostagem/${posts.id}`} className="text-decorator-none" >
+                    <Box mx={0} justifyContent = 'center'>
+                      <Button variant="contained" className="botaopost3" size='small' color="primary" >
+                        Atualizar
+                      </Button>
+                    </Box>
+                  </Link>
+                  <Link to={`/deletarPostagem/${posts.id}`} className="text-decorator-none">
+                    <Box mx={1}>
+                      <Button variant="contained" size='small' color="secondary" className='botaopost4'>
+                        Deletar
+                      </Button>
+                    </Box>
+                  </Link>
             </Box>
           </Grid>
         ))}
