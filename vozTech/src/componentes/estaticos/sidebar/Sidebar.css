@@ -1,5 +1,9 @@
 .logoside {
     max-width: 130px; 
+    transition: transform 0.3s ease;
+}
+.logoside:hover{
+    transform: scale(1.1);
 }
 
 .posilogoside { display: flex;
