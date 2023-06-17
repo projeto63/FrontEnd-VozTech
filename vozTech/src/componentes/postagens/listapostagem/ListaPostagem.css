@@ -54,6 +54,9 @@
     background-color: #D2BBAC !important;
     margin-left: 2cm;
     border-radius: 20px !important;
+    box-shadow: 3px 5px 7px #654236;
+    margin-top: 10px !important;
+    border-color: #654236 !important;
   }   
 
 
