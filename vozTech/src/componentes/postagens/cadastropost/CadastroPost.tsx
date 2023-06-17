@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { busca, buscaId, put, post } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import { Box } from '@material-ui/core';
 
 function CadastroPost() {
     const navigate = useNavigate();
@@ -147,7 +148,8 @@ const [usuario, setUsuario] = useState<User>({
         navigate('/postagens')
     }
     return (
-        <Container maxWidth="sm" className="topo">
+        <Box className="tdcadastropost">
+        <Container  className="topopost">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >
                 {id !== undefined ? "Atualize " : "Cadastre "} sua postagem
@@ -181,6 +183,7 @@ const [usuario, setUsuario] = useState<User>({
                 </FormControl>
             </form>
         </Container>
+    </Box>
     )
 }
 export default CadastroPost;

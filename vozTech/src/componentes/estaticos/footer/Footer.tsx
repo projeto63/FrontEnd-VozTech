@@ -19,28 +19,25 @@ function Footer() {
         <Box display={'flex'} className='footer'>
             <Grid container direction="row" justifyContent='flex-end' alignItems="center">
                 <Grid alignItems="center" justifyContent='center' container xs={4}>
-                    <Box>
-                        <img src="/src/assets/logo-bege.svg" alt="" />
-                    </Box>
+                <Box className="frasefooter1">
+                        <Typography className="frasefooter">Projeto VozTech</Typography>
+                        </Box>
                 </Grid>
                 <Grid alignItems="center" direction='column' justifyContent='center' container xs={4}>
                     <Box marginBottom={2} display='flex' gap={2}>
-                        <a href="https://github.com/projeto63">
+                        <a href="https://github.com/projeto63" target='_blank'>
                         <GitHubIcon className='iconeInd1' />
                         </a>
-                        <a href="https://linktr.ee/voztech">
+                        <a href="https://linktr.ee/voztech"  target='_blank'>
                         <LinkedInIcon className='iconeInd2' />
                         </a>
                     </Box>
-                        <Typography className="frasefooter">Projeto VozTech</Typography>
-                        <Typography className="frasefooter">Em parceria com Generation Brasil</Typography>
                 </Grid>
                 <Grid alignItems="center"  justifyContent='center' container xs={4}>
                     <Box display='flex' gap={1}>
-						{/* <Link className='reset-link' to='/loja'>
-							{/* <Box mx={1} style={{ cursor: 'pointer' }}>
-							</Box> */}
-						{/* </Link> */}
+                    <Box className="frasefooter1">
+                        <Typography className="frasefooter">Em parceria com Generation Brasil</Typography>
+                        </Box>
                     </Box>
                 </Grid>
             </Grid>

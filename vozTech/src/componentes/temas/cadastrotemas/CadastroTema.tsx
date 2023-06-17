@@ -7,6 +7,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux/es/exports';
 import { toast } from 'react-toastify';
+import { Box } from '@mui/material';
 
 function CadastroTema() {
     let navigate = useNavigate();
@@ -103,17 +104,23 @@ function CadastroTema() {
     }
 
     return (
+        <Box className="todo">
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" component="h1" align="center" className="corCadastreTema">
                     {id !== undefined ? "Atualize " : "Cadastre "} seu Tema
                     </Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" className='botaoCadastreTema' disabled={tema.descricao.length < 4}>
+            <Box className="containerbotao">
+                <Box className="botaocadpost">
+                <Button type="submit" variant="contained" disabled={tema.descricao.length < 4}>
                     Cadastrar Tema
                 </Button>
+                </Box>
+            </Box>
             </form>
         </Container>
+        </Box>
     )
 }
 

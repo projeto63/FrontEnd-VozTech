@@ -1,18 +1,41 @@
 .topo{
     background-color: #D2BBAC;
-    margin-top: 20px;
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .corCadastreTema{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
     color: #35231c;
 }
 
-.botaoCadastreTema{
+/* .botaoCadastreTema{
     background-color: #654236 !important;
     color: #FFEBD6 !important;
-}
+} */
 
-.botaoCadastreTema:hover{
+/* .botaoCadastreTema:hover{
     background-color: #FFEBD6 !important;
     color: #654236 !important;
+} */
+
+.todo{  
+    margin-top: 50px !important;
+    min-height: 75vh !important;
 }
+
+/* .botaocadpost{
+
+    font-size: 1rem;
+    background-color: #F2E1C1 !important;
+    transform: translateY(-0.10em);
+    box-shadow: 3px 3px 0px rgba(55, 22, 22, 0.67);
+    border: 1px solid rgba(55, 22, 22, 0.67);
+    border-radius: 50px;
+    padding: 0.75em 1.5em;
+    transition: 0.2s;
+    cursor: pointer;
+
+} */
