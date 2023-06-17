@@ -75,6 +75,7 @@
   display: flex;
   margin: auto !important;
   background-color: #D2BBAC !important;
+  box-shadow: 2px 4px 6px #654236;
   align-items: center !important;
   margin-left: 2cm;
   border-radius: 20px !important;

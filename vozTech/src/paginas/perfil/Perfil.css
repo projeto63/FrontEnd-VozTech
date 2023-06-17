@@ -25,12 +25,14 @@
     aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid #654236;
+    box-shadow: 2px 4px 6px #654236;
     padding: 8px;
   }
   
   .perfilUpdate {
     display: flex;
     justify-content: center;
+    
   }
   
   .perfilUpdate form {
@@ -68,4 +70,5 @@
     margin-bottom: 120px;
     display: flex;
     padding: 20px;
+    box-shadow: 2px 4px 6px #654236;
   }

@@ -7,6 +7,7 @@
   top: -15px;
   left: -340px;
   transition: transform 0.3s ease;
+  box-shadow: 2px 4px 6px #654236;
   /* Adicione outros estilos desejados */
 }
 
@@ -23,6 +24,7 @@
   top: -15px;
   left: -340px;
   transition: transform 0.3s ease;
+  box-shadow: 2px 4px 6px #654236;
   /* Adicione outros estilos desejados */
 }
 .img2:hover {
@@ -52,6 +54,8 @@
   position: relative;
   top: -15px;
   left: -340px;
+  box-shadow: 2px 4px 6px #654236;
+  padding: 11px;
   /* Adicione outros estilos desejados */
 }
 
