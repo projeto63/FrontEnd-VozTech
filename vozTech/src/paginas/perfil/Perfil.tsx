@@ -136,11 +136,14 @@ function Perfil() {
           </div>
           <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
         </div>
-        <Box className="formulario3">
-          <Typography variant="h5" style={{ margin: '0 auto' }} display="flex" justifyContent="center" alignSelf="center" className="atualizarperfil">
-            Atualizar Perfil
-          </Typography>
-          <div className="perfilUpdate">
+        <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+      </div>
+      <Grid className='cardperfil'>
+      <Box className="formulario3" >
+      <Typography variant="h5" style={{ margin: '0 auto' }} display='flex' justifyContent='center' alignSelf='center' className="atualizarperfil">
+              Atualizar Perfil
+            </Typography>
+      <div className="perfilUpdate">
             <form onSubmit={atualizar}>
               <Box
                 display={'flex'}
@@ -198,10 +201,14 @@ function Perfil() {
                 />
                 <Button fullWidth variant="contained" type="submit" className="btnModal espacamento">Atualizar</Button>
               </Box>
+              
             </form>
           </div>
         </Box>
       </div>
+      </Box>
+      </Grid>
+    </div>
     </Grid>
   );
 }
