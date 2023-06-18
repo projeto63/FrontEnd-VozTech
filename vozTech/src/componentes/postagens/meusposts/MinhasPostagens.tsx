@@ -123,9 +123,10 @@ function MinhasPostagens() {
             p={2}
             className="cardmeusposts"
           >
-            <Typography className="postagemmeusposts">Postagem:</Typography>
+            <Typography className="postagemmeusposts">Postagem</Typography>
             <Typography className="fontemeusposts">{posts.titulo}</Typography>
             <Typography className="fontemeusposts">{posts.texto}</Typography>
+            <Typography className="temameusposts">Tema: {posts.tema?.descricao}</Typography>
             <Avatar
               src={usuario.foto}
               style={{ border: '1px solid black' }}
@@ -136,7 +137,6 @@ function MinhasPostagens() {
                 dateStyle: 'full',
               }).format(new Date(posts.data))}
             </Typography>
-            <Typography className="temameusposts">Tema: {posts.tema?.descricao}</Typography>
             <Box display={'flex'} gap={4}>
             <Link to={`/formularioPostagem/${posts.id}`} className="text-decorator-none" >
                     <Box mx={0} justifyContent = 'center'>

@@ -88,17 +88,17 @@ function ListaPostagem() {
             <Card variant="outlined" className='card1' >
               <CardContent >
               
-                <Typography color="textSecondary" gutterBottom>
-                  Postagens
+                <Typography color="textSecondary" gutterBottom className="postagemmeusposts">
+                  Postagem
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className="fontemeusposts">
                   {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className="fontemeusposts">
                   {post.texto}
                 </Typography>
-                <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
+                <Typography variant="body2" component="p" className="temameusposts">
+                  Tema: {post.tema?.descricao}
                 </Typography>
                 <Box display="flex" alignItems="center" mb={1}>
               <Avatar

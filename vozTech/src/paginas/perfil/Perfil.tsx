@@ -123,7 +123,8 @@ function Perfil() {
         </div>
         <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
       </div>
-      <Box className="formulario3">
+      <Grid className='cardperfil'>
+      <Box className="formulario3" >
       <Typography variant="h5" style={{ margin: '0 auto' }} display='flex' justifyContent='center' alignSelf='center' className="atualizarperfil">
               Atualizar Perfil
             </Typography>
@@ -185,9 +186,11 @@ function Perfil() {
                 />
               <Button fullWidth variant={'contained'} type='submit' className="btnModal espacamento">Atualizar</Button>
               </Box>
+              
             </form>
       </div>
       </Box>
+      </Grid>
     </div>
     </Grid>
   );
