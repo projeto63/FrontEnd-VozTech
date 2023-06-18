@@ -135,6 +135,10 @@ function Login() {
                                 }}
                                 />
                             </Box>
+                            <Box>
+                                <br></br>
+                                <Typography variant="subtitle1" gutterBottom align="right" className="cadastrese"> Esqueci minha Senha </Typography>
+                            </Box>
                             <Box marginTop={2} textAlign="center">
                                 <Button type="submit" variant="contained" className="botao">
                                     Logar
