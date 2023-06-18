@@ -1,12 +1,13 @@
 .topo{
-  margin-top: 20px !important; 
+  margin-top: 30px !important; 
   border-radius: 10px; 
-  background-color: #FFEBD6; 
+  background-color: #D2BBAC; 
   width: 100% !important;
 }
 
 .tdcadastropost{
-    background-color: pink;
+    min-height: 75vh !important;
+    background-color: pink !important;
     margin: 0px !important;
 }
 

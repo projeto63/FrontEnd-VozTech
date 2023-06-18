@@ -1,6 +1,7 @@
 .navbar{
     background-color: #754c3f !important;
     padding-top: 40px !important;
+    box-shadow: 2px 4px 6px #3d2720!important;
 
 }
 
@@ -8,6 +9,7 @@
     cursor: pointer;
     margin-bottom: -15px;
     text-align: center;
+    
 }
 
 .margemcursor{

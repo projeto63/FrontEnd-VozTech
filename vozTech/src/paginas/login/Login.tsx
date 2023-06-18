@@ -137,7 +137,7 @@ function Login() {
                             </Box>
                             <Box>
                                 <br></br>
-                                <Typography variant="subtitle1" gutterBottom align="right" className="cadastrese"> Esqueci minha Senha </Typography>
+                                <Typography variant="subtitle1" gutterBottom align="right" className="esqueciminhasenha"> Esqueci Minha Senha </Typography>
                             </Box>
                             <Box marginTop={2} textAlign="center">
                                 <Button type="submit" variant="contained" className="botao">
@@ -148,7 +148,7 @@ function Login() {
                         </form>
                         <Box display="flex" justifyContent="center" marginTop={2}>
                             <Box marginRight={1}>
-                                <Typography variant="subtitle1" gutterBottom align="center">Não tem uma conta?</Typography>
+                                <Typography variant="subtitle1" gutterBottom align="center" >Não tem uma conta?</Typography>
                             </Box>
                             <Link to="/cadastrousuario">
                                 <Typography variant="subtitle1" gutterBottom align="center" className="cadastrese" >Cadastre-se </Typography>

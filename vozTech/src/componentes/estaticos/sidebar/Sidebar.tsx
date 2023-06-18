@@ -90,7 +90,7 @@ const Sidebar: React.FunctionComponent = () => {
   if(token !== '') {
     sidebarComponent = (
 
-    <Container>
+    <Container className="sidebarinteira">
       <Grid container>
         <Grid item xs={2}>
           <SidebarMenu className="sidebarmenu">
@@ -107,7 +107,9 @@ const Sidebar: React.FunctionComponent = () => {
             <div className="perfilBanner">
               <div className="perfilContent">
               <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
-              <h2>{usuario.nome}</h2>
+              <Box className="nomeperfilsidebar">
+              <h3>{usuario.nome}</h3>
+              </Box>
                 {/* <p>{usuario.usuario}</p> */}
                 {/* <p>{usuario.nome}</p>  */}
                 {/* <p>Total de postagens feitas: {usuario.postagem?.length}</p> */}

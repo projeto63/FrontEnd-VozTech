@@ -79,16 +79,28 @@
   align-items: center !important;
   margin-left: 2cm;
   border-radius: 20px !important;
+  border-style: solid !important;
+  border-color:#654236 !important;
   /* justify-content: space-between; */
   flex-direction: column;
   width: 25%;
 
 }
 
-/* .card1 {
+.temacard{
+  font-size: 15px !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold !important;
+  color: #402a2362 !important;
+}
 
-}   
+.temaprincipal{
+  font-size: 20px !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold !important;
+  color:#2c1d17 !important;
+}
 
-.ajusteTema{
-
-} */
+.margemtemas{
+  margin-top: 30px !important;
+}
