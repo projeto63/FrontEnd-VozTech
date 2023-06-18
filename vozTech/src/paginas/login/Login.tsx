@@ -99,6 +99,10 @@ function Login () {
                             <TextField className="espaco" value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="Usuário" variant="outlined" name="usuario" margin="normal" fullWidth />
                             <TextField className="espaco" value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="Senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
                             </Box>
+                            <Box>
+                                <br></br>
+                                <Typography variant="subtitle1" gutterBottom align="right" className="cadastrese"> Esqueci minha Senha </Typography>
+                            </Box>
                             <Box marginTop={2} textAlign="center">
                                 <Button type="submit" variant="contained" className="botao">
                                     Logar
