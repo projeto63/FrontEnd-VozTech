@@ -1,20 +1,33 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import './Perfil.css';
-import { Grid, Typography, Avatar, Box, Button, Accordion, AccordionDetails, AccordionSummary, TextField, } from '@mui/material';
+import { Grid, Typography, Avatar, Box, Button, Accordion, AccordionDetails, AccordionSummary, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import User from '../../models/User';
 import { buscaId, post, put } from '../../services/Service';
 import { toast } from 'react-toastify';
 import Cards from '../../componentes/estaticos/cards/Cards';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  focusedInput: {
+    '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+      borderColor: "#654236",
+    },
+    '& .MuiInputLabel-root.Mui-focused': {
+      color: "#654236",
+    },
+  },
+}));
 
 function Perfil() {
   const token = useSelector<TokenState, TokenState['tokens']>(
     (state) => state.tokens
   );
   const userId = useSelector<TokenState, TokenState['id']>((state) => state.id);
+  const classes = useStyles();
 
   const [usuario, setUsuario] = useState<User>({
     id: +userId,
@@ -44,9 +57,9 @@ function Perfil() {
   useEffect(() => {
     setUsuario({
       ...usuario,
-      senha: ''
-    })
-  }, [usuario.usuario])
+      senha: '',
+    });
+  }, [usuario.usuario]);
 
   const [confirmarSenha, setConfirmarSenha] = useState<string>('');
 
@@ -71,39 +84,39 @@ function Perfil() {
           },
         });
         toast.success('Usuário cadastrado com sucesso', {
-          position: "top-center",
+          position: 'top-center',
           autoClose: 2000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "colored",
+          theme: 'colored',
         });
         setUsuario({ ...usuario, senha: '' });
         setConfirmarSenha('');
       } catch (error) {
         toast.error('Falha ao cadastrar o usuário, verifique os campos', {
-          position: "top-center",
+          position: 'top-center',
           autoClose: 2000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "colored",
+          theme: 'colored',
         });
       }
     } else {
       toast.error('Os campos de Senha e Confirmar Senha estão diferentes', {
-        position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
+        position: 'top-center',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
       });
       setUsuario({ ...usuario, senha: '' });
       setConfirmarSenha('');
@@ -114,20 +127,20 @@ function Perfil() {
 
   return (
     <Grid className="background">
-    <div className="perfilContainer">
-      <div className="perfilBanner">
-        <div>
-          <h2>{usuario.nome}</h2>
-          <p>{usuario.usuario}</p>
-          <p>Total de postagens feitas: {usuario.postagem?.length}</p>
+      <div className="perfilContainer">
+        <div className="perfilBanner">
+          <div>
+            <h2>{usuario.nome}</h2>
+            <p>{usuario.usuario}</p>
+            <p>Total de postagens feitas: {usuario.postagem?.length}</p>
+          </div>
+          <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
         </div>
-        <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
-      </div>
-      <Box className="formulario3">
-      <Typography variant="h5" style={{ margin: '0 auto' }} display='flex' justifyContent='center' alignSelf='center' className="atualizarperfil">
-              Atualizar Perfil
-            </Typography>
-      <div className="perfilUpdate">
+        <Box className="formulario3">
+          <Typography variant="h5" style={{ margin: '0 auto' }} display="flex" justifyContent="center" alignSelf="center" className="atualizarperfil">
+            Atualizar Perfil
+          </Typography>
+          <div className="perfilUpdate">
             <form onSubmit={atualizar}>
               <Box
                 display={'flex'}
@@ -136,7 +149,7 @@ function Perfil() {
                 gap={2}
               >
                 <TextField
-                  className="espacamento2"
+                  className={`espacamento2 ${classes.focusedInput}`}
                   name="nome"
                   label="Nome completo"
                   value={usuario.nome}
@@ -145,7 +158,7 @@ function Perfil() {
                   }
                 />
                 <TextField
-                  className="espacamento2"
+                  className={`espacamento2 ${classes.focusedInput}`}
                   name="usuario"
                   label="Endereço de e-mail"
                   disabled
@@ -155,7 +168,7 @@ function Perfil() {
                   }
                 />
                 <TextField
-                  className="espacamento2"
+                  className={`espacamento2 ${classes.focusedInput}`}
                   name="foto"
                   label="URL da foto"
                   value={usuario.foto}
@@ -164,7 +177,7 @@ function Perfil() {
                   }
                 />
                 <TextField
-                  className="espacamento2"
+                  className={`espacamento2 ${classes.focusedInput}`}
                   name="senha"
                   label="Senha"
                   type="password"
@@ -174,7 +187,7 @@ function Perfil() {
                   }
                 />
                 <TextField
-                  className="espacamento2"
+                  className={`espacamento2 ${classes.focusedInput}`}
                   name="confirmarSenha"
                   label="Confirmar senha"
                   type="password"
@@ -183,12 +196,12 @@ function Perfil() {
                     confirmSenha(event)
                   }
                 />
-              <Button fullWidth variant={'contained'} type='submit' className="btnModal espacamento">Atualizar</Button>
+                <Button fullWidth variant="contained" type="submit" className="btnModal espacamento">Atualizar</Button>
               </Box>
             </form>
+          </div>
+        </Box>
       </div>
-      </Box>
-    </div>
     </Grid>
   );
 }

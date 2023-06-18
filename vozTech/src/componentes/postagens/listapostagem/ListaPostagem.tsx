@@ -91,7 +91,9 @@ function ListaPostagem() {
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography 
+                variant="h5" 
+                component="h2">
                   {post.titulo}
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -113,7 +115,6 @@ function ListaPostagem() {
                 <CardActions>
                 <Box display="flex" justifyContent="center" mb={0}>
 
-                 
                 </Box>
               </CardActions>
               </CardContent>

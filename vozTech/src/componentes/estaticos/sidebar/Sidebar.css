@@ -22,4 +22,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
+    
+}
+
+.perfiBanner{
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
