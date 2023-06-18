@@ -200,16 +200,12 @@ function Perfil() {
                   }
                 />
                 <Button fullWidth variant="contained" type="submit" className="btnModal espacamento">Atualizar</Button>
-              </Box>
-              
-            </form>
-          </div>
-        </Box>
-      </div>
-      </Box>
+                </Box>
+              </form>
+            </div>
+          </Box>
+        </Grid>
       </Grid>
-    </div>
-    </Grid>
   );
 }
 
