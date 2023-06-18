@@ -13,7 +13,8 @@
 }
 
 .sidebarmenu{
-    font-family: 'Montserrat', sans-serif !important;
+    box-shadow: 3px 5px 7px #b77448;
+    font-family: 'Lato', sans-serif !important;
 }
     /* font-family: 'Lato', sans-serif !important; */
 
@@ -29,4 +30,12 @@
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.nomeperfilsidebar{
+    margin-top: 15px !important;
+}
+
+.sidebarinteira{
+    box-shadow: 3px 5px 7px #654236;
 }

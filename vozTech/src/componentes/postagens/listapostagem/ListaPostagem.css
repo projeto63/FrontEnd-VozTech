@@ -10,7 +10,7 @@
     animation: bblFadInOut 1.8s infinite ease-in-out;
   }
   .loader {
-    color: #FFF;
+    color: #ee9d66;
     font-size: 7px;
     position: relative;
     text-indent: -9999em;
@@ -44,7 +44,6 @@
   .fotoPosts{
     height: 25px!important;
     width: 25px!important;
-
   }
 
   .card1 {
@@ -94,7 +93,12 @@
   }
 
   .postado{
-    margin-top: 30px !important;
+    margin-top: 10px !important;
+    font-size: 15px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color: #402a2362 !important;
+    margin-bottom: 0px !important;
   }
 
   .gridprincipal{
@@ -106,3 +110,36 @@
     /* background-color: pink; */
   }
 
+  .nomeperfil{
+    margin-top: 5px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+  }
+
+  .posts1{
+    font-size: 15px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color: #402a2362 !important;
+  }
+
+  .titulopost{
+    font-size: 20px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color:#2c1d17 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .textopost{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 18px !important;
+  }
+
+  .temameusposts1{
+    font-size: 15px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color: #402a2362 !important;
+    margin-top: 5px !important;
+  }

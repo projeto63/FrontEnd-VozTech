@@ -88,30 +88,38 @@ function ListaPostagem() {
             <Card variant="outlined" className='card1' >
               <CardContent >
               
-                <Typography color="textSecondary" gutterBottom>
-                  Postagens
+                <Typography className="posts1" gutterBottom>
+                  Postagem
                 </Typography>
                 <Typography 
                 variant="h5" 
-                component="h2">
+                component="h2"
+                className="titulopost">
                   {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className="textopost">
                   {post.texto}
+                </Typography>
+                <Typography variant="body2" component="p" className="temameusposts1">
+                  Tema
                 </Typography>
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
                 </Typography>
+                
                 <Box display="flex" alignItems="center" mb={1}>
-              <Avatar
-              src={post.usuario.foto}
-              style={{ border: '1px solid black' }}
-              alt="" className="fotoPosts"
-            />
               <Typography variant="body2" component="p" className="postado">
-              Postado por: {post.usuario?.nome}
+              Postado por:
             </Typography>
             </Box>
+            <Avatar
+              src={post.usuario.foto}
+              style={{ border: '1px solid black' }}
+              alt="" className="fotocard"
+            />
+            <Typography variant="body2" component="p" className="nomeperfil">
+            {post.usuario?.nome}
+            </Typography>
                 <CardActions>
                 <Box display="flex" justifyContent="center" mb={0}>
 
