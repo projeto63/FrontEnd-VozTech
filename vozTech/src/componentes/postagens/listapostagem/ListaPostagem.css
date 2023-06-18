@@ -46,6 +46,16 @@
     width: 25px!important;
   }
 
+  /* .tudoposts{
+    background-image: url(https://ik.imagekit.io/projetovoztech/teste.png?updatedAt=1687062268994) !important;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    margin: 0%;
+
+  } */
   .card1 {
     display: flex;
     background-color: #d2acc8 !important;
