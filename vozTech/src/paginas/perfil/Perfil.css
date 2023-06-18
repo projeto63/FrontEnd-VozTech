@@ -26,12 +26,14 @@
     aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid #654236;
+    box-shadow: 2px 4px 6px #654236;
     padding: 8px;
   }
   
   .perfilUpdate {
     display: flex;
     justify-content: center;
+    
   }
   
   .perfilUpdate form {
@@ -86,3 +88,6 @@
   .atualizarperfil { 
     font-family: 'Lato', sans-serif !important;
   }
+
+    box-shadow: 2px 4px 6px #654236;
+ 

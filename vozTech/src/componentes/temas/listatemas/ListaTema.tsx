@@ -49,13 +49,13 @@ function ListaTema() {
     {temas.length === 0 && <div className='alinhamento'><span className="loader"></span></div>}
     {
       temas.map(tema =>(
-      <Box m={2} >
+      <Box m={2} className="margemtemas">
         <Card variant="outlined" className="card3">
           <CardContent className="ajusteTema">
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom className="temacard">
               Tema
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h2" className="temaprincipal">
               {tema.descricao}
             </Typography>
           </CardContent>

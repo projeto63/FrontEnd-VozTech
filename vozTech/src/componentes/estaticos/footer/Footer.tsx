@@ -17,7 +17,7 @@ function Footer() {
     if (token !== ""){
         footerComponent = 
         <Box display={'flex'} className='footer'>
-            <Grid container direction="row" justifyContent='flex-end' alignItems="center">
+            <Grid container direction="row" justifyContent='flex-end' alignItems="center" className="sombrafooter">
                 <Grid alignItems="center" justifyContent='center' container xs={4}>
                 <Box className="frasefooter1">
                         <Typography className="frasefooter">Projeto VozTech</Typography>

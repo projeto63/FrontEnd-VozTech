@@ -124,19 +124,30 @@ function MinhasPostagens() {
             className="cardmeusposts"
           >
             <Typography className="postagemmeusposts">Postagem</Typography>
-            <Typography className="fontemeusposts">{posts.titulo}</Typography>
+
+            <Typography className="titulopost">{posts.titulo}</Typography>
             <Typography className="fontemeusposts">{posts.texto}</Typography>
-            <Typography className="temameusposts">Tema: {posts.tema?.descricao}</Typography>
-            <Avatar
+            {/* <Avatar
               src={usuario.foto}
               style={{ border: '1px solid black' }}
               alt=""
-            />
+            /> */}
+
+            <Typography className="temameusposts">Tema</Typography>
+            <Typography >{posts.tema?.descricao}</Typography>
             <Typography className="dataposts">
               {new Intl.DateTimeFormat('pt-br', {
                 dateStyle: 'full',
               }).format(new Date(posts.data))}
             </Typography>
+
+            <Avatar
+              className="fotocard"
+              src={usuario.foto}
+              style={{ border: '1px solid black' }}
+              alt=""
+            />
+
             <Box display={'flex'} gap={4}>
             <Link to={`/formularioPostagem/${posts.id}`} className="text-decorator-none" >
                     <Box mx={0} justifyContent = 'center'>
