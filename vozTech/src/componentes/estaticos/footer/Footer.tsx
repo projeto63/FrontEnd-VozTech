@@ -16,26 +16,32 @@ function Footer() {
 
     if (token !== ""){
         footerComponent = 
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-        <Grid  item xs={12} className="footer">
- 
-        <Box display={'flex'}  gap={2}  className='iconesFooter' alignItems={'center'}  justifyContent={'space-around'}>
-        <Box className="nomefooter">
-        <Typography className="itemsfooter" variant='h6'>Projeto VozTech</Typography>
-        <Typography className="itemsfooter" variant='h6'>Em parceria com Generation Brasil</Typography>
-        </Box>
-        <Box mx={10} justifyContent='center' display='flex' alignItems='center' className="icones">
-            <a href="https://github.com/projeto63/FrontEnd-VozTech" target='_blank'>
-            <GitHubIcon className='iconeInd1' />
-            </a>
-            <a href="https://linktr.ee/projetovoztech"target='_blank' >
-            <LinkedInIcon className='iconeInd2' />
-            </a>
+        <Box display={'flex'} className='footer'>
+            <Grid container direction="row" justifyContent='flex-end' alignItems="center">
+                <Grid alignItems="center" justifyContent='center' container xs={4}>
+                <Box className="frasefooter1">
+                        <Typography className="frasefooter">Projeto VozTech</Typography>
+                        </Box>
+                </Grid>
+                <Grid alignItems="center" direction='column' justifyContent='center' container xs={4}>
+                    <Box marginBottom={2} display='flex' gap={2}>
+                        <a href="https://github.com/projeto63" target='_blank'>
+                        <GitHubIcon className='iconeInd1' />
+                        </a>
+                        <a href="https://linktr.ee/voztech"  target='_blank'>
+                        <LinkedInIcon className='iconeInd2' />
+                        </a>
+                    </Box>
+                </Grid>
+                <Grid alignItems="center"  justifyContent='center' container xs={4}>
+                    <Box display='flex' gap={1}>
+                    <Box className="frasefooter1">
+                        <Typography className="frasefooter">Em parceria com Generation Brasil</Typography>
+                        </Box>
+                    </Box>
+                </Grid>
+            </Grid>
             </Box>
-
-        </Box>
-        </Grid>
-        </Grid>
     
     }
     return (

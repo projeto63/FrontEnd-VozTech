@@ -3,18 +3,11 @@
     height: 150px;
 }
 
-.redes {
-    font-size: 60px !important; 
-    color: white; 
-}
-
-
-.textos {
-    color: white;
-}
 
 .footer{
-    background-color: #654236;
+    display: block !important;
+    background-color: #754c3f;
+    min-height: 2vh !important;
 }
 
 .iconesFooter{
@@ -30,14 +23,16 @@
 .iconeInd2{
 
     justify-items: center !important;
-    font-size: 40px !important;
-    margin-left: -360px;
+    font-size: 45px !important;
+    color: #FFF5EB !important;
+    margin-top: 10px;
 }
 
 .iconeInd1 {
     justify-items: center !important;
-    font-size: 40px !important;
-    margin-left: -410px;
+    font-size: 45px !important;
+    color: #FFF5EB !important;
+    margin-top: 10px;
 }
 
 
@@ -60,3 +55,11 @@
     /* position: absolute !important; */
 
 }
+
+.frasefooter{
+    font-family: 'Lato', sans-serif !important;
+    color: #FFF5EB !important;
+    font-size: 15px !important;
+    text-align: center;
+}
+

@@ -6,6 +6,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux/es/exports';
 import { toast } from 'react-toastify';
+import { Box } from '@mui/material';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -112,9 +114,11 @@ function CadastroTema() {
     }
 
     return (
+        <Box className="todo">
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" component="h1" align="center" className="corCadastreTema">
+
                     {id !== undefined ? 'Atualize ' : 'Cadastre '} seu Tema
                 </Typography>
                 <TextField
@@ -128,11 +132,16 @@ function CadastroTema() {
                     fullWidth
                     className={classes.focusedInput}
                 />
+                <Box className="containerbotao">
+                <Box className="botaocadpost">
                 <Button type="submit" variant="contained" className="botaoCadastreTema" disabled={tema.descricao.length < 4}>
                     Cadastrar Tema
                 </Button>
+                </Box>
+            </Box>
             </form>
         </Container>
+        </Box>
     );
 }
 
