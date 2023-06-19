@@ -36,11 +36,11 @@
   color: #3d2720 !important;
   font-family: 'Sigmar', cursive !important;
   color: #000000;
-  position: relative;
-  top: -15px;
-  left: -340px;
   font-size: 35px !important;
-  /* Adicione outros estilos desejados */
+  text-align: center !important;
+  display: flex !important;
+  justify-content:left!important;
+  align-items: center !important;
 }
 
 /* Estilizando o texto da Terra Verde */
@@ -58,6 +58,13 @@
   left: -340px;
   box-shadow: 3px 4px 2px 4px #3d2720;
 
+  padding: 11px;
+  width: 100% !important;
+  min-width: 500px !important;
+  /* Adicione outros estilos desejados */
+
+
+
 }
 
 /* Estilizando o Box com a classe "margin" */
@@ -72,4 +79,12 @@
   align-items: center;
   margin: 60px;
   /* Adicione outros estilos desejados */
+}
+
+.fotoparceir{
+  justify-content: center !important;
+}
+
+.centralizarparceiros{
+  margin-left: 200px !important;
 }

@@ -5,7 +5,7 @@ import "./Parceiros.css";
 function Parceiros() {
   return (
     <>
-      <Box display="flex" alignItems="center"></Box>
+      <Box  className="centralizarparceiros">
       <Grid
         container
         direction={"row"}
@@ -30,8 +30,8 @@ function Parceiros() {
               />
             </a>
           </Box>
-          <Box display="flex" alignItems="center" justifyContent="center">
-            <a href="http://pudim.com.br/" target="_blank">
+          <Box display="flex" alignItems="center" justifyContent="center" className="fotoparceiro">
+            <a href="https://incluijobs.vercel.app/" target="_blank">
               <img
                 src="https://ik.imagekit.io/projetovoztech/Imagem_do_WhatsApp_de_2023-05-31_%C3%A0_s__10.32.02.jpg?updatedAt=1685671580852"
                 alt="Fazenda"
@@ -41,7 +41,7 @@ function Parceiros() {
           </Box>
         </Grid>
         <Grid item xs={4} alignItems={"center"}>
-          <Box paddingX={10} className="margin">
+          <Box  className="margin">
             <Typography
               variant="h5"
               gutterBottom
@@ -94,6 +94,7 @@ function Parceiros() {
           </Box>
         </Grid>
       </Grid>
+      </Box>
     </>
   );
 }
