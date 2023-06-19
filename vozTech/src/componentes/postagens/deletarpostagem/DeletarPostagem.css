@@ -1,12 +1,14 @@
 .botaonao {
     background-color: #654236 !important;
     color: #FFEBD6 !important;
+    margin-left: 15px !important;
 }
 
 .botaonao:hover {
     font-weight: bolder !important;
-    background-color: #918450 !important;
+    background-color: #897217 !important;
     color: #FFEBD6 !important;
+    transform: scale(0.8) !important;
 }
 
 .marginLeft {
@@ -19,7 +21,23 @@
 }
 
 .marginLeft:hover {
+    background-color: #ef3f2b;
     font-weight: bolder !important;
-    background-color: #a54d43 !important;
-    color: #FFEBD6 !important;
+    transform: scale(0.8) !important;
+}
+
+.carddelet{
+    border: #654236 !important;
+}
+
+.deletarpost{
+    font-family: 'Lato', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+    color: #2f1f1a87 !important;
+}
+
+.deletarpostagem{
+    font-family: 'Lato', sans-serif !important;
+    color: #221714 !important;
 }

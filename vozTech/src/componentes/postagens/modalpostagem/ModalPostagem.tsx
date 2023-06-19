@@ -47,18 +47,17 @@ function ModalPostagem () {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <Box display="flex" justifyContent="flex-end" className="cursor">
+      <Box display="flex" justifyContent="flex-end" className="tudomodal">
         <CloseIcon onClick={handleClose}/>
       
       </Box>
-      
       <CadastroPost/>
-      
+
     </div>
   );
 
   return (
-    <div>
+    <div className="tudomodal">
       <Button
         variant="outlined"
         className="btnModal"
