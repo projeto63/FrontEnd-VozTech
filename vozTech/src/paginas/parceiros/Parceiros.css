@@ -48,6 +48,8 @@
   font-family: "Lato", sans-serif !important;
   font-weight: bold !important;
   color: #000000;
+  padding-left: 1px;
+  padding-right: 0px;
   font-size: 25px;
   background-color: #f2e1c1;
   border-radius: 5px;
@@ -55,14 +57,12 @@
   top: -15px;
   left: -340px;
   box-shadow: 3px 4px 2px 4px #3d2720;
-  padding: 11px;
-  /* Adicione outros estilos desejados */
+
 }
 
 /* Estilizando o Box com a classe "margin" */
 .margin {
   margin: 20px;
-  /* Adicione outros estilos desejados */
 }
 
 /* Estilizando o Box com a classe "imgposicao" */
