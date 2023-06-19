@@ -114,6 +114,7 @@ function CadastroTema() {
     }
 
     return (
+        <Box className="minheight">
         <Box className="todo">
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
@@ -134,13 +135,14 @@ function CadastroTema() {
                 />
                 <Box className="containerbotao">
                 <Box className="botaocadpost">
-                <Button type="submit" variant="contained" className="botaoCadastreTema" disabled={tema.descricao.length < 4}>
+                <Button type="submit" variant="contained" disabled={tema.descricao.length < 4}>
                     Cadastrar Tema
                 </Button>
                 </Box>
             </Box>
             </form>
         </Container>
+        </Box>
         </Box>
     );
 }

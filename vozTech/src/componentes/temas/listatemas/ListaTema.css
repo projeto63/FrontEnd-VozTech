@@ -46,13 +46,18 @@
     margin-top: 20px !important;
     background-color: #654236 !important;
     color: #FFEBD6 !important;
-    
+    transition: transform 0.5s ease !important;
+    box-shadow: 3px 4px 6px #654236 !important;
+    border-radius: 50px !important;
+    margin-top: -5px !important;
   }
 
   .botaopostagens:hover{
     font-weight: bolder !important;
-    background-color: #918450 !important;
+    background-color: #897217 !important;
     color: #FFEBD6 !important;
+    transform: scale(0.8) !important;
+
   }
   
   .botaopost2 {
@@ -62,13 +67,18 @@
   color: #FFEBD6 !important;
   justify-content: center !important;
   align-items: center !important;
-  border-radius: 10px;
+  border-radius: 50px !important;
+  transition: transform 0.5s ease !important;
+  box-shadow: 3px 4px 6px #654236 !important;
+  border-color: black !important;
+  margin-top: -5px !important;
 }
 
 .botaopost2:hover{
   font-weight: bolder !important;
-  background-color: #a54d43 !important;
+  background-color: #ef3f2b !important;
   color: #FFEBD6 !important;
+  transform: scale(0.8) !important;
 }
 
 .card3{
