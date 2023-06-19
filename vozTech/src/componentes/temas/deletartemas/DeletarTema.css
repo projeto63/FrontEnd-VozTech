@@ -1,37 +1,68 @@
 .marginLeft {
     display: flex !important;
-    background-color: #a72d04 !important;
+    background-color: #a72d04;
     color: #FFEBD6 !important;
     justify-content: center !important;
     align-items: center !important;
-    border-radius: 10px;
+    border-radius: 50px !important;
+    transition: transform 0.5s ease !important;
+    box-shadow: 3px 4px 6px #654236 !important;
+    margin-right: -20px !important;
+
 }
 
 .marginLeft:hover {
+    background-color: #ef3f2b;
     font-weight: bolder !important;
-    background-color: #a54d43 !important;
-    color: #FFEBD6 !important;
+    transform: scale(0.8) !important;
 }
 
 .botaonao {
     background-color: #654236 !important;
     color: #FFEBD6 !important;
+    border-radius: 50px !important;
+    transition: transform 0.5s ease !important;
+    box-shadow: 3px 4px 6px #654236 !important;
+
 }
 
 .botaonao:hover {
     font-weight: bolder !important;
-    background-color: #918450 !important;
+    background-color: #897217 !important;
     color: #FFEBD6 !important;
+    transform: scale(0.8) !important;
 }
 
 .carddelet {
     display: flex;
-  margin: auto !important;
-  background-color: #D2BBAC !important;
-  align-items: center !important;
-  margin-left: 2cm;
-  border-radius: 20px !important;
-  /* justify-content: space-between; */
-  flex-direction: column;
-  width: 25%;
+    margin: auto !important;
+    background-color: #D2BBAC !important;
+    align-items: center !important;
+    margin-left: 2cm;
+    border-radius: 20px !important;
+    flex-direction: column;
+    width: 25%;
+    box-shadow: 3px 4px 6px #654236 !important;
+    border: #654236 !important;
+    margin-top: 50px !important;
+
+}
+
+.minheight{
+    min-height: 75vh !important;
+}
+
+.deletartema{
+    font-size: 20px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color:#2c1d17 !important;
+    margin-bottom: 15px !important;
+}
+
+.temadeletar{
+    font-size: 20px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    color:#2c1d1791 !important;
 }

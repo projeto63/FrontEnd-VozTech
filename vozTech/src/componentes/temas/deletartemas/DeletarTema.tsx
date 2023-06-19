@@ -74,15 +74,15 @@ function DeletarTema() {
   return (
     <>
 
-      <Box m={2} >
+      <Box m={2} className="minheight" >
         <Card variant="outlined" className='carddelet'>
           <CardContent >
             <Box justifyContent="center" >
 
-              <Typography color="textSecondary" gutterBottom>
+              <Typography color="textSecondary" gutterBottom className="deletartema">
                 Deseja deletar o Tema:
               </Typography>
-              <Typography color="textSecondary">
+              <Typography color="textSecondary" className="temadeletar">
                 {tema?.descricao}
               </Typography>
             </Box>
