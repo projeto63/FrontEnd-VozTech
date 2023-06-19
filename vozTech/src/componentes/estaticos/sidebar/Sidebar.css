@@ -26,6 +26,10 @@
     
 }
 
+.perfilContent img {
+    width: 95%;
+}
+
 .perfiBanner{
     justify-content: center;
     margin-top: 10px;

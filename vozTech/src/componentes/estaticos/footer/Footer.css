@@ -5,7 +5,7 @@
 
 
 .footer{
-    /* margin-top: 30px !important; */
+    margin-top: 30px !important;
     display: block !important;
     background-color: #754c3f;
     min-height: 2vh !important;
@@ -67,6 +67,4 @@
     color: #FFF5EB !important;
     font-size: 15px !important;
     text-align: center;
-    margin-left: 50px !important;
 }
-

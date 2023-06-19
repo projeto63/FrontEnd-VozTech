@@ -106,7 +106,7 @@ const Sidebar: React.FunctionComponent = () => {
 
             <div className="perfilBanner">
               <div className="perfilContent">
-              <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+                <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
               <Box className="nomeperfilsidebar">
               <h3>{usuario.nome}</h3>
               </Box>

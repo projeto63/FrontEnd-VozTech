@@ -48,8 +48,6 @@
   font-family: "Lato", sans-serif !important;
   font-weight: bold !important;
   color: #000000;
-  padding-left: 1px;
-  padding-right: 0px;
   font-size: 25px;
   background-color: #f2e1c1;
   border-radius: 5px;
@@ -57,12 +55,14 @@
   top: -15px;
   left: -340px;
   box-shadow: 3px 4px 2px 4px #3d2720;
-
+  padding: 11px;
+  /* Adicione outros estilos desejados */
 }
 
 /* Estilizando o Box com a classe "margin" */
 .margin {
   margin: 20px;
+  /* Adicione outros estilos desejados */
 }
 
 /* Estilizando o Box com a classe "imgposicao" */
@@ -72,4 +72,39 @@
   align-items: center;
   margin: 60px;
   /* Adicione outros estilos desejados */
+}
+
+.containerParceiros {
+  display: flex;
+  gap: 2rem;
+  width: 40vw;
+  margin: 3rem auto;
+  align-items: center;
+}
+
+.linkParceiros img{
+  width: 320px;
+  box-shadow: rgb(61, 39, 32) 2px 2px 4px 5px;
+  border-radius: 5px;
+  transition: transform .3s ease;
+}
+
+.linkParceiros img:hover {
+  transform: scale(0.9);
+}
+
+.containerTextoParceiros h5 {
+  font-family: Sigmar, cursive !important;;
+  font-size: 35px;
+  text-align: center;
+  color:rgb(61, 39, 32);
+}
+
+.containerTextoParceiros p {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 700;
+  background-color: #f2e1c1;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 3px 4px 2px 4px #3d2720;
 }
