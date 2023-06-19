@@ -37,7 +37,7 @@ function Home() {
     }, [token])
     return (
         <>
-       <Grid className="carroça">
+       <Grid className="carroçaa">
         <Carousel/>
         </Grid>
         <Grid  className="gridprincipalhome">
