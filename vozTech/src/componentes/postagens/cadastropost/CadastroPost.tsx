@@ -151,9 +151,11 @@ const [usuario, setUsuario] = useState<User>({
         <Box className="tdcadastropost">
         <Container  className="topopost">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >
+                <Box className="cadastrarposts">
+                <Typography variant="h3" color="textSecondary" component="h1" align="center">
                 {id !== undefined ? "Atualize " : "Cadastre "} sua postagem
                     </Typography>
+                    </Box>
                     {/* <TextField value={postagem.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth /> */}
                 <TextField 
                 value={postagem.titulo} 

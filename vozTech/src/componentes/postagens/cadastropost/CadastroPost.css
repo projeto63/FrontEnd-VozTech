@@ -7,7 +7,10 @@
 
 .tdcadastropost{
     min-height: 75vh !important;
-    background-color: pink !important;
+    background-color: #D2BBAC !important;
     margin: 0px !important;
 }
 
+.cadastrarposts{
+  font-family: 'Lato', sans-serif !important;
+}
