@@ -40,7 +40,6 @@ function Home() {
        <Grid className="carroça">
         <Carousel/>
         </Grid>
-
         <Grid  className="gridprincipalhome">
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa' > 
                     <Grid xs={12} className='buttons'>
