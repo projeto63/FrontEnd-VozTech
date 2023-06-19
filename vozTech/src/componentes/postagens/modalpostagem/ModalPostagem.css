@@ -4,6 +4,17 @@
 
 .btnModal{
     margin-top: 20px !important;
+    background-color: #f2e1c1 !important;
+    color: #654236 !important;
+    transition: transform 1s ease;
+    box-shadow: 3px 4px 6px #654236;
+    border-radius: 50px !important;
+
+    
+}
+
+.btnModal:hover{
     background-color: #654236 !important;
-    color: #FFEBD6 !important;
+    transform: scale(0.9);
+    color:#f2e1c1 !important;
 }

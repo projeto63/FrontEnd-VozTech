@@ -136,7 +136,7 @@ function Perfil() {
           </div>
           <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
         </div>
-        <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+        {/* <img src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} /> */}
       </div>
       <Grid className='cardperfil'>
       <Box className="formulario3" >
