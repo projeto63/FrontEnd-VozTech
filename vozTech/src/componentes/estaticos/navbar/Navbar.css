@@ -14,16 +14,25 @@
 .margemcursor{
     font-family: 'Lato', sans-serif !important;
     font-weight: bold !important;
-    color: #FFF5EB;
+    color: #3d2720;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #f2e1c1 ;
+    border-radius: 20px !important;
+    border: 1px !important;
+    border-color: #3d2720 !important;
+    transition: transform 0.5s ease;
+    margin-right: 10px !important;
+    box-shadow: 2px 4px 6px #3d2720!important;
+    margin-top: -15px !important;
 }
 
 
 .margemcursor:hover{
-    background-color: #FFF5EB;
-    color: #654236;
+    background-color: #ee9d66;
+    color: #3d2720;
     border-radius: 10px;
+    transform: scale(0.8);
 }
 
 .margemcursor{

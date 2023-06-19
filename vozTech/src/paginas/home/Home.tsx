@@ -37,14 +37,12 @@ function Home() {
     }, [token])
     return (
         <>
+       <Grid className="carroça">
         <Carousel/>
-        
+        </Grid>
+
         <Grid  className="gridprincipalhome">
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa' > 
-            
-                {/* <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid> */}
                     <Grid xs={12} className='buttons'>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
