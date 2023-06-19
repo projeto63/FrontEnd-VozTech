@@ -6,8 +6,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux/es/exports';
 import { toast } from 'react-toastify';
-import { Box } from '@mui/material';
-
+import { Box, Grid } from '@mui/material';
+import './CadastroTema.css'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -116,7 +116,7 @@ function CadastroTema() {
     return (
         <Box className="minheight">
         <Box className="todo">
-        <Container maxWidth="sm" className="topo">
+        <div className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" component="h1" align="center" className="corCadastreTema">
 
@@ -141,7 +141,7 @@ function CadastroTema() {
                 </Box>
             </Box>
             </form>
-        </Container>
+        </div>
         </Box>
         </Box>
     );

@@ -24,7 +24,7 @@ function Navbar() {
   if(token !== '') {
     navbarComponent = (
 <AppBar position="static" className="navbar">
-        <Toolbar  >
+        <Toolbar >
         {/* <Box className="pLogoNav">
               <img className="logoNav" src="https://ik.imagekit.io/projetovoztech/VozTech-bg-pq.png?updatedAt=1685662797332" alt="" />
             </Box> */}
@@ -35,7 +35,7 @@ function Navbar() {
               </Typography>
             </Box> */}
 
-            <Box display="flex" justifyContent="start">
+            <Box display="flex" justifyContent="center" width={'100%'}>
               <Link to="/home">
                 <Box mx={1} className="cursor" >
                   <Typography variant="h6"  className="margemcursor">

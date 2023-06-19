@@ -21,3 +21,11 @@ a{
 .cursor{
 
 }
+
+/* class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline" */
+.MuiFormLabel-root {
+    color: #3d2720 !important
+}
+.MuiOutlinedInput-notchedOutline {
+    border-color: #3d2720  !important;
+}

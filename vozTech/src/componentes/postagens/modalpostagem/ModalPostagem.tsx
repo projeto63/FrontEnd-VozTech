@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paper: {
       position: 'absolute',
-      width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
+      width: '40vw',
+      backgroundColor: 'transparent',
+      // border: '2px solid #000',
+      // boxShadow: theme.shadows[5],
+      // padding: theme.spacing(2, 4, 3),
     },
   }),
 );
@@ -47,20 +47,15 @@ function ModalPostagem () {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <Box display="flex" justifyContent="flex-end" className="tudomodal">
-        <CloseIcon onClick={handleClose}/>
-      
-      </Box>
       <CadastroPost/>
-
     </div>
   );
 
   return (
-    <div className="tudomodal">
+    <div>
       <Button
         variant="outlined"
-        className="btnModal"
+        className='botaopostagenshome'
         onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}
