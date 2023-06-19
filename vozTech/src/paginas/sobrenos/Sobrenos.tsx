@@ -45,7 +45,7 @@ function Sobrenos() {
 
       <Grid item xs={12}>
         <Typography className="conhecanossaequipe" align="center">
-          Conheça nossa equipe:
+          Nossos Desenvolvedores:
         </Typography>
       </Grid>
 

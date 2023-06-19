@@ -124,6 +124,7 @@ function MinhasPostagens() {
             className="cardmeusposts"
           >
             <Typography className="postagemmeusposts">Postagem</Typography>
+
             <Typography className="titulopost">{posts.titulo}</Typography>
             <Typography className="fontemeusposts">{posts.texto}</Typography>
             {/* <Avatar
@@ -139,12 +140,14 @@ function MinhasPostagens() {
                 dateStyle: 'full',
               }).format(new Date(posts.data))}
             </Typography>
+
             <Avatar
               className="fotocard"
               src={usuario.foto}
               style={{ border: '1px solid black' }}
               alt=""
             />
+
             <Box display={'flex'} gap={4}>
             <Link to={`/formularioPostagem/${posts.id}`} className="text-decorator-none" >
                     <Box mx={0} justifyContent = 'center'>

@@ -1,74 +1,91 @@
-
-.background{
-  background-color: #FFF5EB;
+.background {
+  background-color: #fff5eb;
   margin: 0px !important;
 }
 
-
 .perfilContainer {
-    /* width: 80vw; */
-    margin-inline: auto;
-    /* background: #f60; */
-  }
-  
-  .perfilBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: row-reverse;
-    padding: 1rem;
-  }
-  
-  .perfilBanner img {
-    width: 10vw;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 2px solid #654236;
-    box-shadow: 2px 4px 6px #654236;
-    padding: 8px;
-  }
-  
-  .perfilUpdate {
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .perfilUpdate form {
-    width: 50vw;
-  }
-  
-  .perfilPosts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:1rem;
-  }
+  /* width: 80vw; */
+  margin-inline: auto;
+  /* background: #f60; */
+  font-family: "Lato", sans-serif !important;
+}
 
-  /* .atualizarperfil{
+.perfilBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.perfilBanner img {
+  width: 10vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid #654236;
+  box-shadow: 2px 4px 6px #654236;
+  padding: 8px;
+}
+
+.perfilUpdate {
+  display: flex;
+  justify-content: center;
+}
+
+.perfilUpdate form {
+  width: 50vw;
+}
+
+.perfilPosts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* .atualizarperfil{
     
 
   } */
 
-  .espacamento{
-    margin-top: 30px !important;
-  }
+.espacamento {
+  margin-top: 30px !important;
+}
 
-  .espacamento2{
-    margin-top: 15px !important;
-  }
+.espacamento2 {
+  margin-top: 15px !important;
+}
 
-  .formulario3{
-    background-color: #d2bbac65 !important;
-    flex-direction: column;
-    gap: 1rem;
-    border-radius: 10px;
-    width: 400px;
-    height: 550px;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 120px;
-    display: flex;
-    padding: 20px;
-    box-shadow: 2px 4px 6px #654236;
-  }
+.formulario3 {
+  background-color: #d2bbac65 !important;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 120px;
+  display: flex;
+  padding: 20px;
+  box-shadow: 3px 5px 7px #654236;
+  margin-top: 25px;
+}
+
+/* .cardperfil {
+    margin: auto !important;
+  margin-left: 40px !important;
+  background-color: #D2BBAC !important;
+  font-family: 'Lato', sans-serif !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-color: #654236 !important;
+  box-shadow: 3px 5px 7px #654236;
+
+  } */
+
+.atualizarperfil {
+  font-family: "Lato", sans-serif !important;
+}
+
+box-shadow: 2px 4px 6px #654236;
